@@ -81,7 +81,7 @@ const App = () => {
         <h1>Projects</h1>
 
         <div class="project-cards">
-          <Card style={{ width: "18rem" }}>
+          <Card style={{ width: "20rem" }}>
             <Card.Img
               variant="top"
               src="https://faribucket.s3.amazonaws.com/1631123442944_Fari%20-%20Fari.PNG"
@@ -97,7 +97,7 @@ const App = () => {
               </Button>
             </Card.Body>
           </Card>
-          <Card style={{ width: "18rem" }}>
+          <Card style={{ width: "20rem" }}>
             <Card.Img
               variant="top"
               src="https://faribucket.s3.amazonaws.com/1630504972517_large%20pizza.jpeg"
@@ -113,7 +113,7 @@ const App = () => {
               </Button>
             </Card.Body>
           </Card>
-          <Card style={{ width: "18rem" }}>
+          <Card style={{ width: "20rem" }}>
             <Card.Img
               variant="top"
               src="https://image.pngaaa.com/497/242497-middle.png"
@@ -128,7 +128,7 @@ const App = () => {
               </Button>
             </Card.Body>
           </Card>
-          <Card style={{ width: "18rem" }}>
+          <Card style={{ width: "20rem" }}>
             <Card.Img
               variant="top"
               src="https://www.clipartmax.com/png/middle/365-3651977_section-image-new-york-times-logo-transparent.png"
