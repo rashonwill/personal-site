@@ -241,14 +241,14 @@ h1 {
 
 .glitch{
   position: fixed;
-  top: 30%;
-  left: 30%; 
+  top: 55%;
+  left: 18%; 
   text-align: center;
   color: #d288a2;
   font-size: 2em;
   font-weight: bold;
   font-family: "Teko"; 
-  text-shadow:0.05em 0 0 #403B49, -0.025em -0.05em 0 grey, 0.025em 0.05em 0 darkblue;
+  text-shadow:0.05em 0 0 #171717, -0.025em -0.05em 0 black, 0.025em 0.05em 0 grey;
   animation: glitch infinite 600ms;
 }
 
@@ -276,7 +276,7 @@ span{
 @keyframes glitch{
   0% {
      text-shadow:
-       0.05em 0 0 #403B49, 
+       0.05em 0 0 #171717, 
        -0.05em -0.025em 0 black, 
        -0.025em 0.05em 0 grey;
   }
@@ -284,21 +284,24 @@ span{
   
     15% {
    text-shadow: 
-     -0.05em -0.025em 0 #403B49,                       0.025em 0.025em 0 grey, 
-     -0.05em -0.05em 0 darkblue;
+     -0.05em -0.025em 0 #171717,
+     0.025em 0.025em 0 black, 
+     -0.05em -0.05em 0 grey;
   }
   
       50% {
    text-shadow: 
-     0.025em 0.05em 0 #403B49,                       0.05em 0 0 grey, 
-    0 -0.05em 0 darkblue;
+     0.025em 0.05em 0 #171717,
+     0.05em 0 0 black, 
+    0 -0.05em 0 grey;
   }
   
 
-        100% {
+  100% {
    text-shadow: 
-     -0.025em 0 0 #403B49,                       -0.025em -0.025em 0 grey, 
-    -0.025em -0.05em 0 darkblue;
+     -0.025em 0 0 #171717, 
+     -0.025em -0.025em 0 black, 
+    -0.025em -0.05em 0 grey;
   }
   
   
