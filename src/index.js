@@ -136,7 +136,7 @@ const App = () => {
             <Card.Body>
               <Card.Title>The Times</Card.Title>
               <Card.Text>
-                Current Events and World News Site. Stay informed!
+                Current Events and World News Site. Stay informed! Visit the Times!
               </Card.Text>
               <Button variant="primary">
                 <a href="#">Visit The Times</a>
