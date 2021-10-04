@@ -237,6 +237,7 @@ h1 {
 
 .contact-me button:hover {
   transform: scale(1.05);
+  background: #fdfbf9;
 }
 
 .glitch{
