@@ -109,7 +109,7 @@ const App = () => {
                 meals.
               </Card.Text>
               <Button variant="primary">
-                <a href="#">Visit Dirty Keto</a>
+                <a href="#" target="_blank">Visit Dirty Keto</a>
               </Button>
             </Card.Body>
           </Card>
@@ -124,7 +124,7 @@ const App = () => {
                 Spotify API Project, check out some of your favorite jams.
               </Card.Text>
               <Button variant="primary">
-                <a href="#">Visit My-Spotify</a>
+                <a href="#" target="_blank">Visit My-Spotify</a>
               </Button>
             </Card.Body>
           </Card>
@@ -139,7 +139,7 @@ const App = () => {
                 Current Events and World News Site. Stay informed! Visit the Times!
               </Card.Text>
               <Button variant="primary">
-                <a href="#">Visit The Times</a>
+                <a href="#" target="_blank">Visit The Times</a>
               </Button>
             </Card.Body>
           </Card>
