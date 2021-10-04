@@ -240,12 +240,12 @@ h1 {
 }
 
 .glitch{
-  position: fixed;
-  top: 55%;
-  left: 18%; 
+  position: absolute;
+  top: 90%;
+  left: 23%; 
   text-align: center;
   color: #d288a2;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bold;
   font-family: "Teko"; 
   text-shadow:0.05em 0 0 #171717, -0.025em -0.05em 0 black, 0.025em 0.05em 0 grey;
