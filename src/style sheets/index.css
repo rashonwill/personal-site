@@ -244,10 +244,10 @@ h1 {
   top: 30%;
   left: 30%; 
   text-align: center;
-  color: whitesmoke;
-  font-size: 7em;
+  color: #d288a2;
+  font-size: 2em;
   font-weight: bold;
-  font-family: "Anton"; 
+  font-family: "Teko"; 
   text-shadow:0.05em 0 0 #403B49, -0.025em -0.05em 0 grey, 0.025em 0.05em 0 darkblue;
   animation: glitch infinite 600ms;
 }
@@ -277,8 +277,8 @@ span{
   0% {
      text-shadow:
        0.05em 0 0 #403B49, 
-       -0.05em -0.025em 0 grey, 
-       -0.025em 0.05em 0 darkblue;
+       -0.05em -0.025em 0 black, 
+       -0.025em 0.05em 0 grey;
   }
 
   
