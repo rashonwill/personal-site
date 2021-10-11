@@ -307,3 +307,8 @@ span{
   
   
 }
+
+
+image{
+  display: flex;
+}
