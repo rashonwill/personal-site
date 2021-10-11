@@ -154,10 +154,12 @@ const App = () => {
             <textarea placeholder="Let's Connect"></textarea>
       <div class="image">
         <div class="linked">
-    <i class="fa fa-linkedin"><a href="https://www.linkedin.com/in/rashon-williams-26575291/" target="_blank">LinkedIn</a></i>
+    <i class="fa fa-linkedin"></i>
+    <a href="https://www.linkedin.com/in/rashon-williams-26575291/" target="_blank">LinkedIn</a>
       </div>
 <div class="git">
-     <i class="fa fa-github" aria-hidden="true"> <a href="https://github.com/rashonwill" target="_blank">Github</a></i>
+     <i class="fa fa-github" aria-hidden="true"></i>
+    <a href="https://github.com/rashonwill" target="_blank">Github</a>
        </div>
 </div>
             <button type="submit">Submit</button>
