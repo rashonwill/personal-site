@@ -152,6 +152,10 @@ const App = () => {
             <input type="text" placeholder="Name"></input>
             <input type="text" placeholder="Email"></input>
             <textarea placeholder="Let's Connect"></textarea>
+      <div class="image">
+    <i class="fa fa-linkedin"></i>
+     <i class="fa fa-github" aria-hidden="true"></i>
+</div>
             <button type="submit">Submit</button>
           </form>
         </div>
