@@ -314,6 +314,12 @@ span{
   width: 200px;
   height: 100px;
   margin: 1rem auto;
+  color: #fdfbf9;
+  display: inline;
+  font-size: 50px;
+  padding: 20px;
+  margin: 20px;
+  pointer: cursor;
 }
 
 
