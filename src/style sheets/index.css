@@ -326,7 +326,9 @@ span{
 .image a{
 z-index: 1;
 font-size: 16px;
-margin-left: 15px;  
+margin-left: 15px; 
+text-direction: none;
+color:#fdfbf9;  
 }
 
 .linked{
