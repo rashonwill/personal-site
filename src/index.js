@@ -153,8 +153,8 @@ const App = () => {
             <input type="text" placeholder="Email"></input>
             <textarea placeholder="Let's Connect"></textarea>
       <div class="image">
-    <i class="fa fa-linkedin"><a href="https://www.linkedin.com/in/rashon-williams-26575291/" target="_blank"></a></i>
-     <i class="fa fa-github" aria-hidden="true"> <a href="https://github.com/rashonwill" target="_blank"></a></i>
+    <i class="fa fa-linkedin"><a href="https://www.linkedin.com/in/rashon-williams-26575291/" target="_blank">LinkedIn</a></i>
+     <i class="fa fa-github" aria-hidden="true"> <a href="https://github.com/rashonwill" target="_blank">Github</a></i>
 </div>
             <button type="submit">Submit</button>
           </form>
