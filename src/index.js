@@ -149,8 +149,9 @@ const App = () => {
         <h1>Contact Me</h1>
         <div class="contact-form">
           <form class="contact-me">
-            <input type="text" placeholder="Name"></input>
+            <input type="text" placeholder="Your Name"></input>
             <input type="text" placeholder="Email"></input>
+            <input type="text" placeholder="Subject"></input>
             <textarea placeholder="Let's Connect"></textarea>
       <div class="image">
         <div class="linked">
