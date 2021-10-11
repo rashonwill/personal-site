@@ -230,9 +230,10 @@ h1 {
   border: 2px solid #d288a2;
   padding: 5px;
   color: #d288a2;
-  width: 160px;
+  width: 250px;
+  height: 65px;
   letter-spacing: 0.1rem;
-  margin-top: 15px;
+  margin-top: 55px;
 }
 
 .contact-me button:hover {
@@ -315,10 +316,11 @@ span{
   height: 100px;
   color: #fdfbf9;
   font-size: 60px;
-  padding: 20px;
+  padding: 50px;
   margin: 20px;
-  pointer: cursor;
+  cursor: pointer;
   margin: 1rem auto;
+  margin-top: -40px;
 }
 
 .image a{
@@ -330,11 +332,13 @@ margin-left: 15px;
 .linked{
   display: flex;
   flex-direction: column;
+  margin-left: -50px;
 }
 
 .git{
   display: flex;
   flex-direction: column;
+  margin-right: 120px;
 }
 
 
