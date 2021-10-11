@@ -149,10 +149,10 @@ const App = () => {
         <h1>Contact Me</h1>
         <div class="contact-form">
           <form class="contact-me" action="https://formsubmit.co/williams_rashon92@yahoo.com" method="POST">
-            <input type="text" name="name" placeholder="Your Name"></input>
-            <input type="text" name="email" placeholder="Email"></input>
+            <input type="text" name="name" placeholder="Your Name" required></input>
+            <input type="text" name="email" placeholder="Email" required></input>
             <input type="text" name="subject" placeholder="Subject"></input>
-            <textarea name="message" placeholder="Let's Connect"></textarea>
+            <textarea name="message" placeholder="Let's Connect" required></textarea>
       <div class="image">
         <div class="linked">
     <i class="fa fa-linkedin"></i>
