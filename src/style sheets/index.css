@@ -311,4 +311,39 @@ span{
 
 image{
   display: flex;
+  width: 200px;
+  height: 100px;
+  margin: 1rem auto;
+}
+
+
+.fa-linkedin {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+.fa-linkedin:hover {
+    background-color: #0e76a8;
+}
+
+
+.fa-github {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+.fa-github:hover {
+    background-color: #0e76a8;
 }
