@@ -311,11 +311,10 @@ span{
 
 .image{
   display: flex;
-  width: 500px;
+  width: 250px;
   height: 100px;
   color: #fdfbf9;
-  display: inline;
-  font-size: 50px;
+  font-size: 60px;
   padding: 20px;
   margin: 20px;
   pointer: cursor;
@@ -324,7 +323,8 @@ span{
 
 .image a{
 z-index: 1;
-  font-size: 16px;
+font-size: 16px;
+margin-left: 15px;  
 }
 
 .linked{
@@ -348,6 +348,7 @@ z-index: 1;
     background-color: transparent;
   cursor: pointer;
   border: none;
+  margin-left: 5px;
 }
 .fa-linkedin:hover {
     background-color: #d288a2;
