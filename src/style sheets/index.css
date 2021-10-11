@@ -309,7 +309,7 @@ span{
 }
 
 
-image{
+.image{
   display: flex;
   width: 200px;
   height: 100px;
