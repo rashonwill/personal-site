@@ -326,6 +326,16 @@ span{
 z-index: 1;
 }
 
+.linked{
+  display: flex;
+  flex-direction: column;
+}
+
+.git{
+  display: flex;
+  flex-direction: column;
+}
+
 
 .fa-linkedin {
     padding: 10px 14px;
