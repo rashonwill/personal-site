@@ -322,6 +322,10 @@ span{
   margin: 1rem auto;
 }
 
+.image a{
+z-index: 1;
+}
+
 
 .fa-linkedin {
     padding: 10px 14px;
