@@ -148,7 +148,7 @@ const App = () => {
       <div class="contacts-pg" ref={contactSection}>
         <h1>Contact Me</h1>
         <div class="contact-form">
-          <form class="contact-me">
+          <form class="contact-me" action="https://formsubmit.co/williams_rashon92@yahoo.com" method="POST">
             <input type="text" placeholder="Your Name"></input>
             <input type="text" placeholder="Email"></input>
             <input type="text" placeholder="Subject"></input>
