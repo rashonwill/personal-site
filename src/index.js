@@ -156,7 +156,7 @@ const App = () => {
       <div class="image">
         <div class="linked">
     <i class="fa fa-linkedin"></i>
-    <a href="https://www.linkedin.com/in/rashon-williams-26575291/" target="_blank">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/rashon-williams-26575291" target="_blank">LinkedIn</a>
       </div>
 <div class="git">
      <i class="fa fa-github" aria-hidden="true"></i>
