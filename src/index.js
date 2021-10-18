@@ -109,7 +109,7 @@ const App = () => {
                 meals.
               </Card.Text>
               <Button variant="primary">
-                <a href="#" target="_blank">Visit Dirty Keto</a>
+                <a href="https://dirtyketo-go.netlify.app/" target="_blank">Visit Dirty Keto</a>
               </Button>
             </Card.Body>
           </Card>
