@@ -24,6 +24,7 @@ body {
   width: 1000px;
   height: 100vh;
   float: left;
+  background: #fdfbf9;
 }
 
 .background-pic {
@@ -43,6 +44,7 @@ body {
   color: #d288a2;
   font-family: "Teko";
   font-size: 35px;
+  margin-top: 20px;
 }
 
 Button {
@@ -69,7 +71,6 @@ Button {
   width: 100vw;
   height: 100vh;
   border-top: 10px solid #d288a2;
-  margin-top: 10px;
 }
 
 .scrollUp {
