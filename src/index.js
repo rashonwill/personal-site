@@ -87,7 +87,93 @@ const App = () => {
         onRequestClose={() => setResume(false)}
       >
         <div className="viewResume">
-         <h1> Resume View </h1>
+         <>
+          <div class="popup">
+
+
+<div class="education">
+  <h1> Education </h1>
+  <div class="school">
+    <h2>Louisiana State University(Baton Rouge, LA)</h2>
+    <ul>
+      <li>Full Stack Development Bootcamp </li>
+      <li>Certificate of Completion received July 2021 (26 Week Program)</li>
+   </div>
+  <div class="school">
+    <h2>ITT Technical Institute(Baton Rouge, LA)</h2>
+    <ul>
+      <li>Associates Degree: Information Technology: Network Systems Administration</li>
+      <li>GPA: 3.69</li>
+      <li>Member of the National Technical Honors Society</li>
+   </div>
+   <div class="school">
+    <h2>Assumption High School(Napoleonville, LA)</h2>
+    <ul>
+      <li>High School Diploma received 2010 </li>
+      <li>GPA: 3.1</li>
+      <li>Member of Assumption High Computer Club </li>
+   </div>
+</div>
+<div class="workhistory">
+  <h1> Employment History</h1>
+  <div class="job">
+    <h3 id="company">eQ Health Solutions(Baton Rouge, LA)</h3>
+    <ul>
+      <li>IT Support Tech (March 2014-June 2015)</li>
+      <li>Quality Assurance Analyst (June 2015-August 2019)</li>
+      <li>IT Support Level II (September 2018-August 2019)</li>
+    </ul>
+  </div>
+  <div class="job">
+      <h3 id="company">Baton Rouge General Medical Center(Baton Rouge, LA)</h3>
+        <ul>
+      <li>Systems Analyst (August 2019 – January 2021)</li>
+
+    </ul>
+    </div>
+     <div class="job">
+      <h3 id="company">Paperless Environments(Baton Rouge, LA)</h3>
+        <ul>
+      <li>Technical Support Rep (January 2021 – Present)</li>
+    </ul>
+   </div>
+</div>
+<div class="skills">
+<h1> Technical Skills/Knowledge</h1>
+  <ul>
+    <li>VMware/Virtual Images</li>
+    <li>Remote Desktop</li>
+    <li>Microsoft Office Suite</li>
+    <li>Windows XP, 7, 8,10/ Windows Server/Active Directory</li>
+    <li>Relational Databases</li>
+    <li>jQuery, JavaScript, Ajax, Rest APIs, HTML, CSS, Nodejs, Postgres, My SQL, SQL, ReactJS</li>
+    <li>GitHub, Visual Studio Code</li>
+  </ul>
+  
+</div>
+<div class="contact">
+<h1> Contact </h1>
+  <ol>
+    <li>Name: Rashon M. Williams</li>
+    <li> Address: Napoleonville, LA 70390</li>
+    <li> Email: williams_rashon92@yahoo.com </li>
+    <li> Phone: (985) 859-2607</li>
+
+  </ol>
+</div>
+<div class="pagination">
+    <button class="previous">Previous</button>
+    <ul><span>
+      <li class="page1"><span>1</span></li>
+      <li class="page2"><span>2</span></li>
+      <li class="page3"><span>3</span></li>
+      <li class="page4"><span>4</span></li>
+      </span></ul>
+    <button class="next">Next</button>
+  </div> 
+  
+</div>
+          </>
         </div>
       </Modal>
       </div>
