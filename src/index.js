@@ -87,8 +87,8 @@ const App = () => {
               src="https://faribucket.s3.amazonaws.com/1631123442944_Fari%20-%20Fari.PNG"
             />
             <Card.Body>
-              <Card.Title>Fari</Card.Title>
-              <Card.Text>
+              <Card.Title style={{ font-size: "25px" }}>Fari</Card.Title>
+              <Card.Text style={{ font-size: "22px" }}>
                 Video Sharing Platform for Original Film Creators and Lifestyle
                 Vloggers.
               </Card.Text>
@@ -103,8 +103,8 @@ const App = () => {
               src="https://faribucket.s3.amazonaws.com/1630504972517_large%20pizza.jpeg"
             />
             <Card.Body>
-              <Card.Title>Dirty Keto</Card.Title>
-              <Card.Text>
+              <Card.Title style={{ font-size: "25px" }}>Dirty Keto</Card.Title>
+              <Card.Text style={{ font-size: "22px" }}>
                 Guide to a pleasing Keto diet without giving up your favorite
                 meals.
               </Card.Text>
@@ -119,8 +119,8 @@ const App = () => {
               src="https://image.pngaaa.com/497/242497-middle.png"
             />
             <Card.Body>
-              <Card.Title>Spotify</Card.Title>
-              <Card.Text>
+              <Card.Title style={{ font-size: "25px" }}>Spotify</Card.Title>
+              <Card.Text style={{ font-size: "22px" }}>
                 Spotify API Project, check out some of your favorite jams.
               </Card.Text>
               <Button variant="primary">
@@ -134,8 +134,8 @@ const App = () => {
               src="https://www.clipartmax.com/png/middle/365-3651977_section-image-new-york-times-logo-transparent.png"
             />
             <Card.Body>
-              <Card.Title>The Times</Card.Title>
-              <Card.Text>
+              <Card.Title style={{ font-size: "25px" }}>The Times</Card.Title>
+              <Card.Text style={{ font-size: "22px" }}>
                 Current Events and World News Site. Stay informed! Visit the Times!
               </Card.Text>
               <Button variant="primary">
