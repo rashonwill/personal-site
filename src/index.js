@@ -98,6 +98,7 @@ const App = () => {
     <ul>
       <li>Full Stack Development Bootcamp </li>
       <li>Certificate of Completion received July 2021 (26 Week Program)</li>
+    </ul>
    </div>
   <div class="school">
     <h2>ITT Technical Institute(Baton Rouge, LA)</h2>
@@ -105,6 +106,7 @@ const App = () => {
       <li>Associates Degree: Information Technology: Network Systems Administration</li>
       <li>GPA: 3.69</li>
       <li>Member of the National Technical Honors Society</li>
+    </ul>
    </div>
    <div class="school">
     <h2>Assumption High School(Napoleonville, LA)</h2>
@@ -112,6 +114,7 @@ const App = () => {
       <li>High School Diploma received 2010 </li>
       <li>GPA: 3.1</li>
       <li>Member of Assumption High Computer Club </li>
+     </ul>
    </div>
 </div>
 <div class="workhistory">
