@@ -103,7 +103,7 @@ const App = () => {
               src="https://faribucket.s3.amazonaws.com/1630504972517_large%20pizza.jpeg"
             />
             <Card.Body>
-              <Card.Title style={{ fontSsize: "25px" }}>Dirty Keto</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>Dirty Keto</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
                 Guide to a pleasing Keto diet without giving up your favorite
                 meals.
