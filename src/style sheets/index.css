@@ -387,8 +387,9 @@ color: #fdfbf9;
 .popup{
   background: #171717;
   width: 1800px;
-  height: 750px;
+  height: 780px;
   margin: 1rem auto;
+  box-shadow: 5px 5px 5px 5px #d288a2;
   color: #fdfbf9;
   border-radius: 4px;
   padding: 20px;
