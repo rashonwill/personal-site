@@ -7,6 +7,9 @@ import { useState, useEffect, useRef } from "react";
 import Modal from "react-modal";
 
 const App = () => {
+  const [resume, setResume] = useState(false);
+  
+  
   const homeSection = useRef(null);
   const aboutSection = useRef(null);
   const projectsSection = useRef(null);
@@ -73,9 +76,20 @@ const App = () => {
             </p>
           </div>
           <div class="resume-btn">
-            <Button variant="dark">Resume</Button>{" "}
+            <Button variant="dark" onClick={() => {
+            setResume(true);
+          }}>Resume</Button>{" "}
           </div>
         </div>
+ <Modal
+        style={{ opacity: 1 }}
+        isOpen={resume}
+        onRequestClose={() => setResume(false)}
+      >
+        <div className="viewResume">
+         <h1> Resume View </h1>
+        </div>
+      </Modal>
       </div>
       <div class="projects-pg" ref={projectsSection}>
         <h1>Projects</h1>
