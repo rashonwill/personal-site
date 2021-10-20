@@ -10,42 +10,42 @@ import $ from "jquery";
 const App = () => {
   const [resume, setResume] = useState(false);
   
-    componentDidMount() {
-    viewEducation();
-    viewHistory();
-    viewSkills();
-    viewContact();
-  }
+//     componentDidMount() {
+//     viewEducation();
+//     viewHistory();
+//     viewSkills();
+//     viewContact();
+//   }
 
-  function viewEducation(){
-    $('.education').css('display', 'initial');
-  $('.workhistory').css('display', 'none');
-  $('.skills').css('display', 'none');
-  $('.contact').css('display', 'none');
-  $('.page1').addClass('current-pg').siblings().removeClass("current-pg");
-  }
-    function viewHistory(){
-    $('.workhistory').css('display', 'initial');
-  $('.education').css('display', 'none');
-  $('.skills').css('display', 'none');
-  $('.contact').css('display', 'none');
-  $('.page2').addClass('current-pg').siblings().removeClass("current-pg");
-  }
+//   function viewEducation(){
+//     $('.education').css('display', 'initial');
+//   $('.workhistory').css('display', 'none');
+//   $('.skills').css('display', 'none');
+//   $('.contact').css('display', 'none');
+//   $('.page1').addClass('current-pg').siblings().removeClass("current-pg");
+//   }
+//     function viewHistory(){
+//     $('.workhistory').css('display', 'initial');
+//   $('.education').css('display', 'none');
+//   $('.skills').css('display', 'none');
+//   $('.contact').css('display', 'none');
+//   $('.page2').addClass('current-pg').siblings().removeClass("current-pg");
+//   }
   
-    function viewSkills(){
-    $('.skills').css('display', 'initial');
-  $('.workhistory').css('display', 'none');
-  $('.education').css('display', 'none');
-  $('.contact').css('display', 'none');
-  $('.page3').addClass('current-pg').siblings().removeClass("current-pg");
-  }
-    function viewContact(){
-    $('.contact').css('display', 'initial');
-  $('.skills').css('display', 'none');
-  $('.workhistory').css('display', 'none');
-  $('.education').css('display', 'none');
-  $('.page4').addClass('current-pg').siblings().removeClass("current-pg");
-  }
+//     function viewSkills(){
+//     $('.skills').css('display', 'initial');
+//   $('.workhistory').css('display', 'none');
+//   $('.education').css('display', 'none');
+//   $('.contact').css('display', 'none');
+//   $('.page3').addClass('current-pg').siblings().removeClass("current-pg");
+//   }
+//     function viewContact(){
+//     $('.contact').css('display', 'initial');
+//   $('.skills').css('display', 'none');
+//   $('.workhistory').css('display', 'none');
+//   $('.education').css('display', 'none');
+//   $('.page4').addClass('current-pg').siblings().removeClass("current-pg");
+//   }
   
   const homeSection = useRef(null);
   const aboutSection = useRef(null);
