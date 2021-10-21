@@ -55,8 +55,8 @@ const App = () => {
   $('.education').css('display', 'none');
   $('.page4').addClass('current-pg').siblings().removeClass("current-pg");
   }
-  
- function nextBtn(){
+ 
+function nextBtn(){
 if($('.workhistory').css('display') === 'none'){
 showPage2();
 }else if($('.workhistory').css('display') !== 'none') {
@@ -65,10 +65,10 @@ showPage3();
 };
 
 function previousBtn(){
-if($('.skills').css('display') === 'none'){
-showPage3();
-}else if($('.skills').css('display') !== 'none') {
+if($('.skills').css('display') !== 'none'){
 showPage2();
+}else if($('.workhistory').css('display') !== 'none') {
+showPage1();
    }
 };
   
