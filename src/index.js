@@ -48,27 +48,20 @@ const App = () => {
   $('.contact').css('display', 'none');
   $('.page3').addClass('current-pg').siblings().removeClass("current-pg");
   }
-    function viewContact(){
-    $('.contact').css('display', 'initial');
-  $('.skills').css('display', 'none');
-  $('.workhistory').css('display', 'none');
-  $('.education').css('display', 'none');
-  $('.page4').addClass('current-pg').siblings().removeClass("current-pg");
-  }
  
 function nextBtn(){
 if($('.workhistory').css('display') === 'none'){
-showPage2();
+viewHistory();
 }else if($('.workhistory').css('display') !== 'none') {
-showPage3();
+viewSkills();
   }
 };
 
 function previousBtn(){
 if($('.skills').css('display') !== 'none'){
-showPage2();
+viewHistory();
 }else if($('.workhistory').css('display') !== 'none') {
-showPage1();
+viewEducation();
    }
 };
   
