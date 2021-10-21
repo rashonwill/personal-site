@@ -65,7 +65,7 @@ showPage3();
       showPage4();
   }
 
-});
+};
 
 function previousBtn(){
 if($('.skills').css('display') === 'none'){
@@ -75,7 +75,7 @@ showPage2();
    }else if($('.skills').css('display') === 'none' && $('.workhistory').css('display') !== 'none') {
      showPage1();
    }
-});
+};
   
   const homeSection = useRef(null);
   const aboutSection = useRef(null);
