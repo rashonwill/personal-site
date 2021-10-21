@@ -261,7 +261,7 @@ const App = () => {
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Spotify</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                Spotify API Project, check out some of your favorite jams.
+                Spotify API Project, check out some of your favorite jams, on our custom app. 
               </Card.Text>
               <Button variant="primary">
                 <a href="#" target="_blank">Visit My-Spotify</a>
