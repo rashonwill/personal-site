@@ -18,6 +18,10 @@ const App = () => {
     viewContact();
     }
   }
+  
+  (function(){
+  $('.page1').addClass('current-pg')
+})();
 
   function viewEducation(){
     $('.education').css('display', 'initial');
@@ -206,7 +210,7 @@ const App = () => {
 <div class="pagination">
     <button class="previous">Previous</button>
     <ul><span>
-      <li class="page1" class="current-pg" onClick={viewEducation}><span>1</span></li>
+      <li class="page1" onClick={viewEducation}><span>1</span></li>
       <li class="page2" onClick={viewHistory}><span>2</span></li>
       <li class="page3" onClick={viewSkills}><span>3</span></li>
       <li class="page4" onClick={viewContact}><span>4</span></li>
