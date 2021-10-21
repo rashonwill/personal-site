@@ -221,13 +221,13 @@ showPage2();
   
 </div>
 <div class="pagination">
-    <button class="previous">Previous</button>
+    <button class="previous" onClick={previousBtn}>Previous</button>
     <ul><span>
       <li class="page1" onClick={viewEducation}><span>1</span></li>
       <li class="page2" onClick={viewHistory}><span>2</span></li>
       <li class="page3" onClick={viewSkills}><span>3</span></li>
       </span></ul>
-    <button class="next">Next</button>
+    <button class="next" onClick={nextBtn}>Next</button>
   </div> 
   
 </div>
