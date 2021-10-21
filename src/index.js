@@ -133,7 +133,7 @@ viewEducation();
           </div>
           <div class="resume-btn">
             <Button variant="dark" onClick={() => {
-            setResume(true); firstPage(); }}>Resume</Button>{" "}
+            setResume(true); firstPage() }}>Resume</Button>{" "}
           </div>
         </div>
  <Modal
