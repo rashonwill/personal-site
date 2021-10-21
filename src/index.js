@@ -10,11 +10,6 @@ import { $ }  from "react-jquery-plugin";
 const App = () => {
   const [resume, setResume] = useState(false);
   
-{  
-  (() => {
-  $('.page1').addClass('current-pg');
-})();
-}
   
   class Example extends Component{
     componentDidMount() {
@@ -22,11 +17,15 @@ const App = () => {
     viewHistory();
     viewSkills();
     viewContact();
-      nextBtn();
-      previousBtn();
+    nextBtn();
+    previousBtn();
+    firstPage();
     }
   }
   
+  function firstPage(){
+  $('.page1').addClass('current-pg');
+  }
 
   function viewEducation(){
     $('.education').css('display', 'initial');
@@ -214,7 +213,7 @@ viewEducation();
 <div class="pagination">
     <button class="previous" onClick={previousBtn}>Previous</button>
     <ul><span>
-      <li class="page1" onClick={viewEducation}><span>1</span></li>
+      <li class="page1" onClick={viewEducation}{this.firstPage()}><span>1</span></li>
       <li class="page2" onClick={viewHistory}><span>2</span></li>
       <li class="page3" onClick={viewSkills}><span>3</span></li>
       </span></ul>
