@@ -10,11 +10,13 @@ import { $ }  from "react-jquery-plugin";
 const App = () => {
   const [resume, setResume] = useState(false);
   
+  class Example extends Component{
     componentDidMount() {
     viewEducation();
     viewHistory();
     viewSkills();
     viewContact();
+      }
   }
 
   function viewEducation(){
