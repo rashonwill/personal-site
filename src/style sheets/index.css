@@ -258,7 +258,7 @@ h1 {
   animation: glitch infinite 600ms;
 }
 
-span{
+.glitch span{
   position: absolute;
   top: 0;
   left: 0;
@@ -516,13 +516,13 @@ text-align: left;
 
 
 .pagination{
-  width: 600px;
+  width: 700px;
   height: 60px;
   background: #171717;
   color: #FDFBF9;
   border-radius: 250px;
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  top: 700px;
   left: 28%;
   padding: 5px;
   margin: 10px;
@@ -542,7 +542,7 @@ text-align: left;
   font-family: "Teko";
   letter-spacing: .1rem;
   box-shadow: 5px 5px 5px 5px black;
-  margin-bottom: 125px;
+  margin-bottom: 105px;
 }
 
 .next{
@@ -562,14 +562,12 @@ text-align: left;
   cursor: pointer;
   font-family: "Teko";
   position: relative;
-  left: 150%;
+  text-align: center;
 }
 
 .current-pg{
   border-radius: 50%;
-  padding: 5px;
   width: 30px;
   height: 30px;
-  text-align: center;
   box-shadow: 2px 2px 2px 2px #d288a2;
 }
