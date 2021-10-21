@@ -4,6 +4,25 @@
 body {
   background: #171717;
 }
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #171717;
+  background: #171717;
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #d288a2;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-corner {
+  background: #171717;
+}
+
+
 .navbar-dark .navbar-nav .nav-link {
   color: #d288a2;
   font-family: "Teko";
