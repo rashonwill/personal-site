@@ -210,9 +210,10 @@ viewEducation();
   
 </div>
 <div class="pagination">
+  {this.firstPage()}
     <button class="previous" onClick={previousBtn}>Previous</button>
     <ul><span>
-      <li class="page1" onClick={viewEducation}{this.firstPage()}><span>1</span></li>
+      <li class="page1" onClick={viewEducation}><span>1</span></li>
       <li class="page2" onClick={viewHistory}><span>2</span></li>
       <li class="page3" onClick={viewSkills}><span>3</span></li>
       </span></ul>
