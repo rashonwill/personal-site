@@ -10,9 +10,10 @@ import { $ }  from "react-jquery-plugin";
 const App = () => {
   const [resume, setResume] = useState(false);
   
-    useEffect(() => {
-     $('.page1').addClass('current-pg')
-  }, []);
+  
+  (() => {
+  $('.page1').addClass('current-pg')
+})();
   
   class Example extends Component{
     componentDidMount() {
