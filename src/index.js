@@ -61,8 +61,6 @@ if($('.workhistory').css('display') === 'none'){
 showPage2();
 }else if($('.workhistory').css('display') !== 'none') {
 showPage3();
-  }else if($('.skills').css('display') !== 'none' && $('.workhistory').css('display') === 'none' ) {
-      showPage4();
   }
 };
 
@@ -71,8 +69,6 @@ if($('.skills').css('display') === 'none'){
 showPage3();
 }else if($('.skills').css('display') !== 'none') {
 showPage2();
-   }else if($('.skills').css('display') === 'none' && $('.workhistory').css('display') !== 'none') {
-     showPage1();
    }
 };
   
