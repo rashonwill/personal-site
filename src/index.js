@@ -64,7 +64,6 @@ showPage3();
   }else if($('.skills').css('display') !== 'none' && $('.workhistory').css('display') === 'none' ) {
       showPage4();
   }
-
 };
 
 function previousBtn(){
