@@ -10,6 +10,10 @@ import { $ }  from "react-jquery-plugin";
 const App = () => {
   const [resume, setResume] = useState(false);
   
+    useEffect(() => {
+     $('.page1').addClass('current-pg')
+  }, []);
+  
   class Example extends Component{
     componentDidMount() {
     viewEducation();
@@ -19,9 +23,6 @@ const App = () => {
     }
   }
   
-  (function(){
-  $('.page1').addClass('current-pg')
-})();
 
   function viewEducation(){
     $('.education').css('display', 'initial');
