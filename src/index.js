@@ -204,10 +204,10 @@ const App = () => {
 <div class="pagination">
     <button class="previous">Previous</button>
     <ul><span>
-      <li class="page1"><span>1</span></li>
-      <li class="page2"><span>2</span></li>
-      <li class="page3"><span>3</span></li>
-      <li class="page4"><span>4</span></li>
+      <li class="page1" onClick={viewEducation}><span>1</span></li>
+      <li class="page2" onClick={viewHistory}><span>2</span></li>
+      <li class="page3" onClick={viewSkills}><span>3</span></li>
+      <li class="page4" onClick={viewContact}><span>4</span></li>
       </span></ul>
     <button class="next">Next</button>
   </div> 
