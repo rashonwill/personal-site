@@ -220,23 +220,12 @@ showPage2();
   </ul>
   
 </div>
-// <div class="contact">
-// <h1> Contact </h1>
-//   <ol>
-//     <li>Name: Rashon M. Williams</li>
-//     <li> Address: Napoleonville, LA 70390</li>
-//     <li> Email: williams_rashon92@yahoo.com </li>
-//     <li> Phone: (985) 859-2607</li>
-
-//   </ol>
-// </div>
 <div class="pagination">
     <button class="previous">Previous</button>
     <ul><span>
       <li class="page1" onClick={viewEducation}><span>1</span></li>
       <li class="page2" onClick={viewHistory}><span>2</span></li>
       <li class="page3" onClick={viewSkills}><span>3</span></li>
-//       <li class="page4" onClick={viewContact}><span>4</span></li>
       </span></ul>
     <button class="next">Next</button>
   </div> 
