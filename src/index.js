@@ -19,11 +19,10 @@ const App = () => {
     viewContact();
     nextBtn();
     previousBtn();
-    firstPage();
     }
   }
   
-  function firstPage(){
+  firstPage(){
   $('.page1').addClass('current-pg');
   }
 
