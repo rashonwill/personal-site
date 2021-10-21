@@ -54,6 +54,27 @@ const App = () => {
   $('.page4').addClass('current-pg').siblings().removeClass("current-pg");
   }
   
+  $('.next').click(function(){
+if($('.workhistory').css('display') === 'none'){
+showPage2();
+}else if($('.workhistory').css('display') !== 'none') {
+showPage3();
+  }else if($('.skills').css('display') !== 'none' && $('.workhistory').css('display') === 'none' ) {
+      showPage4();
+  }
+
+});
+
+$('.previous').click(function(){
+if($('.skills').css('display') === 'none'){
+showPage3();
+}else if($('.skills').css('display') !== 'none') {
+showPage2();
+   }else if($('.skills').css('display') === 'none' && $('.workhistory').css('display') !== 'none') {
+     showPage1();
+   }
+});
+  
   const homeSection = useRef(null);
   const aboutSection = useRef(null);
   const projectsSection = useRef(null);
