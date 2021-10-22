@@ -203,7 +203,6 @@ viewEducation();
     <li>Remote Desktop</li>
     <li>Microsoft Office Suite</li>
     <li>Windows XP, 7, 8,10/ Windows Server/Active Directory</li>
-    <li>Relational Databases</li>
     <li>Frontend Development: AJAX, HTML, CSS, Javascript, Jquery, ReactJS, Responsive Design, Bootstrap, MaterialUI, JSON</li>
     <li>Backend Development: Rest APIs, Nodejs, Postgres, MySQL, SSMS, JWT, Express, Nodemailer, AWS S3, Websockets  </li>
     <li>GitHub, Visual Studio Code</li>
