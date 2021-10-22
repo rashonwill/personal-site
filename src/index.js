@@ -204,7 +204,8 @@ viewEducation();
     <li>Microsoft Office Suite</li>
     <li>Windows XP, 7, 8,10/ Windows Server/Active Directory</li>
     <li>Relational Databases</li>
-    <li>jQuery, JavaScript, Ajax, Rest APIs, HTML, CSS, Nodejs, Postgres, My SQL, SQL, ReactJS</li>
+    <li>Frontend Development: AJAX, HTML, CSS, Javascript, Jquery, ReactJS, Responsive Design, Bootstrap, MaterialUI, JSON</li>
+    <li>Backend Development: Rest APIs, Nodejs, Postgres, MySQL, SSMS, JWT, Express, Nodemailer, AWS S3, Websockets  </li>
     <li>GitHub, Visual Studio Code</li>
   </ul>
   
