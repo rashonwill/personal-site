@@ -135,10 +135,6 @@ Button {
   margin: 20px;
 }
 
-.about-pg .resume-btn{
-  display: flex;
-  flex-direction: column;
-}
 
 .projects-pg {
   background: #171717;
