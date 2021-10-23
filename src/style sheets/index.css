@@ -120,8 +120,13 @@ Button {
 .about-pg .resume-btn {
   display: block;
   float: right;
-  width: 800px;
+  width: 950px;
   height: 20vh;
+  margin-top: -70px;
+}
+
+.within-about{
+margin: 40px;
 }
 
 .about-pg p {
