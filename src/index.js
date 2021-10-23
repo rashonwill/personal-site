@@ -135,7 +135,10 @@ viewEducation();
             <Button variant="dark" onClick={() => {
             setResume(true); firstPage() }}>Resume</Button>{" "}
 
- <div class ="container">  
+          </div>
+</div>
+
+<div class ="container">  
   <div id ="cube"> 
     
 <div class ="front">
@@ -164,13 +167,9 @@ viewEducation();
        <div class ="bottom"> 
 <img src="https://img.icons8.com/windows/32/000000/nodejs.png"/>
   </div>
+
   </div>
   </div>
-
-
-          </div>
-
-
 
         </div>
  <Modal
