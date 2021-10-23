@@ -135,6 +135,41 @@ viewEducation();
             <Button variant="dark" onClick={() => {
             setResume(true); firstPage() }}>Resume</Button>{" "}
           </div>
+        
+ <div class ="container">  
+  <div id ="cube"> 
+    
+<div class ="front">
+<img src="https://img.icons8.com/ios-filled/50/000000/javascript-logo.png"/>
+  </div>
+    
+ <div class ="back">
+<img src="https://img.icons8.com/ios-filled/50/000000/react-native.png"/>
+  </div>  
+    
+ <div class ="right">
+<img src="https://img.icons8.com/metro/50/000000/sql.png"/>
+  </div>  
+    
+    
+     <div class ="left">
+  <img src="https://img.icons8.com/ios-filled/50/000000/heroku.png"/>
+  </div>   
+    
+    
+       <div class ="top">
+<img src="https://img.icons8.com/ios-filled/50/000000/css-filetype.png"/>
+  </div>    
+    
+    
+       <div class ="bottom"> 
+<img src="https://img.icons8.com/windows/32/000000/nodejs.png"/>
+  </div>
+  </div>
+  </div>
+
+
+
         </div>
  <Modal
         style={{ opacity: 1 }}
