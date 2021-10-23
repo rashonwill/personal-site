@@ -675,11 +675,11 @@ body{
 
 @keyframes rotate{
   0%{
-    rotateY(45deg);
+   transform: rotateY(45deg);
   }
   
   20%{
-    rotateY(-45deg);
+    transform: rotateY(-45deg);
   }
   
   40%{
