@@ -134,8 +134,7 @@ viewEducation();
           <div class="resume-btn">
             <Button variant="dark" onClick={() => {
             setResume(true); firstPage() }}>Resume</Button>{" "}
-          </div>
-        
+
  <div class ="container">  
   <div id ="cube"> 
     
@@ -167,6 +166,9 @@ viewEducation();
   </div>
   </div>
   </div>
+
+
+          </div>
 
 
 
