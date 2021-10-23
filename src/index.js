@@ -259,7 +259,6 @@ viewEducation();
           </>
         </div>
       </Modal>
-      </div>
       <div class="projects-pg" ref={projectsSection}>
         <h1>Projects</h1>
 
