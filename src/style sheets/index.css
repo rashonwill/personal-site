@@ -435,6 +435,7 @@ padding: 10px;
 .android{
 display: flex;
 flex-direction: column;
+  text-align: center;
 }
 
 .fa-android {
@@ -461,6 +462,7 @@ flex-direction: column;
 .ios{
 display: flex;
 flex-direction: column;
+  text-align: center;
 }
 
 
