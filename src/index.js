@@ -351,6 +351,7 @@ viewEducation();
             </Card.Body>
           </Card>
 </div>
+
       </div>
       <div class="contacts-pg" ref={contactSection}>
         <h1>Contact Me</h1>
