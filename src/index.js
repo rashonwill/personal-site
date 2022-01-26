@@ -350,7 +350,7 @@ viewEducation();
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Spotify</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                Spotify API Project, check out some of your favorite jams, on our custom app. 
+                Spotify API Project, check out some of your favorite jams. 
               </Card.Text>
 
  <div class="icons">
