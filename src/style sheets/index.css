@@ -433,6 +433,7 @@ margin: 20px;
 display:flex;
 margin: 10px;  
 padding: 10px; 
+  justify-content: center;
 }
 .android{
 display: flex;
@@ -490,6 +491,7 @@ flex-direction: column;
 background: #171717;
 color: #fdfbf9;
 }
+
 .popup{
   background: #171717;
   width: 1800px;
