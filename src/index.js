@@ -345,7 +345,7 @@ viewEducation();
   <Card style={{ width: "21rem" }}>
             <Card.Img
               variant="top"
-              src="https://midiaresearch.com/storage/uploads/blog/images/2018/05/Color-Spotify-Logo.jpg"
+              src="https://images.indianexpress.com/2021/08/Spotify.jpg"
             />
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Spotify</Card.Title>
