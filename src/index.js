@@ -318,10 +318,10 @@ viewEducation();
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Sneaker Heads</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                eCommerce Apparel Store. Stay Fresh. Stay Fit. Sneaker Heads.
+                eCommerce Apparel Store. Stay Fresh. Sneaker Head.
               </Card.Text>
               <Button variant="primary">
-                <a href="#" target="https://sneakerheads22.netlify.app/">Visit Sneaker Heads</a>
+                <a href="#" target="https://sneakerheads22.netlify.app/">Visit Sneaker Head</a>
               </Button>
             </Card.Body>
           </Card>
