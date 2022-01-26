@@ -314,21 +314,7 @@ viewEducation();
             </Card.Body>
           </Card>
 
-          <Card style={{ width: "21rem" }}>
-            <Card.Img
-              variant="top"
-              src="https://image.pngaaa.com/497/242497-middle.png"
-            />
-            <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Spotify</Card.Title>
-              <Card.Text style={{ fontSize: "22px" }}>
-                Spotify API Project, check out some of your favorite jams, on our custom app. 
-              </Card.Text>
-              <Button variant="primary">
-                <a href="#" target="_blank">Visit My-Spotify</a>
-              </Button>
-            </Card.Body>
-          </Card>
+        
         </div>
 <h2>Mobile Applications</h2>
 <div class="mobile-apps">
@@ -353,6 +339,31 @@ viewEducation();
 <a href="#" target="_blank">Android App</a>
 </div>
                 </div>
+            </Card.Body>
+          </Card>
+
+  <Card style={{ width: "21rem" }}>
+            <Card.Img
+              variant="top"
+              src="https://image.pngaaa.com/497/242497-middle.png"
+            />
+            <Card.Body>
+              <Card.Title style={{ fontSize: "25px" }}>Spotify</Card.Title>
+              <Card.Text style={{ fontSize: "22px" }}>
+                Spotify API Project, check out some of your favorite jams, on our custom app. 
+              </Card.Text>
+
+ <div class="icons">
+                <div class="ios">
+                <i class="fa fa-apple" aria-hidden="true"></i>
+<a href="#" target="_blank">iOS App</a>
+</div>
+<div class="android">
+                <i class="fa fa-android" aria-hidden="true"></i>
+<a href="#" target="_blank">Android App</a>
+</div>
+                </div>
+
             </Card.Body>
           </Card>
 </div>
