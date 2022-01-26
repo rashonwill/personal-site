@@ -262,6 +262,8 @@ viewEducation();
       <div class="projects-pg" ref={projectsSection}>
         <h1>Projects</h1>
 
+<h2> Web Applicatons </h2>
+
         <div class="project-cards">
           <Card style={{ width: "21rem" }}>
             <Card.Img
@@ -327,9 +329,10 @@ viewEducation();
               </Button>
             </Card.Body>
           </Card>
-
- 
         </div>
+<div class="mobile-apps">
+<h2>Mobile Applications</h2>
+</div>
       </div>
       <div class="contacts-pg" ref={contactSection}>
         <h1>Contact Me</h1>
