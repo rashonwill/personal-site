@@ -316,7 +316,7 @@ viewEducation();
               src="https://ih1.redbubble.net/image.1028635848.2482/st,small,507x507-pad,600x600,f8f8f8.jpg"
             />
             <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Sneaker Heads</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>Sneaker Head</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
                 eCommerce Apparel Store. Stay Fresh. Sneaker Head.
               </Card.Text>
