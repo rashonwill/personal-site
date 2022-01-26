@@ -321,7 +321,7 @@ viewEducation();
                 eCommerce Apparel Store. Stay Fresh. Stay Fit. Sneaker Heads.
               </Card.Text>
               <Button variant="primary">
-                <a href="#" target="_blank">Visit Sneaker Heads</a>
+                <a href="#" target="https://sneakerheads22.netlify.app/">Visit Sneaker Heads</a>
               </Button>
             </Card.Body>
           </Card>
