@@ -332,6 +332,24 @@ viewEducation();
         </div>
 <div class="mobile-apps">
 <h2>Mobile Applications</h2>
+
+<Card style={{ width: "21rem" }}>
+            <Card.Img
+              variant="top"
+              src="https://faribucket.s3.amazonaws.com/1631123442944_Fari%20-%20Fari.PNG"
+            />
+            <Card.Body>
+              <Card.Title style={{ fontSize: "25px" }}>Fari</Card.Title>
+              <Card.Text style={{ fontSize: "22px" }}>
+                Video Sharing Platform for Original Film Creators and Lifestyle
+                Vloggers.
+              </Card.Text>
+              <div class="icons">
+                <i class="fa fa-apple" aria-hidden="true"></i>
+                <i class="fa fa-android" aria-hidden="true"></i>
+                </div>
+            </Card.Body>
+          </Card>
 </div>
       </div>
       <div class="contacts-pg" ref={contactSection}>
