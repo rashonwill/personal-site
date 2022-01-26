@@ -295,6 +295,23 @@ viewEducation();
               </Button>
             </Card.Body>
           </Card>
+
+         <Card style={{ width: "21rem" }}>
+            <Card.Img
+              variant="top"
+              src="https://ih1.redbubble.net/image.1028635848.2482/st,small,507x507-pad,600x600,f8f8f8.jpg"
+            />
+            <Card.Body>
+              <Card.Title style={{ fontSize: "25px" }}>Sneaker Head</Card.Title>
+              <Card.Text style={{ fontSize: "22px" }}>
+                eCommerce Apparel Store. Stay Fresh. Sneaker Head.
+              </Card.Text>
+              <Button variant="primary">
+                <a href="#" target="https://sneakerheads22.netlify.app/">Visit Sneaker Head</a>
+              </Button>
+            </Card.Body>
+          </Card>
+
           <Card style={{ width: "21rem" }}>
             <Card.Img
               variant="top"
@@ -310,21 +327,8 @@ viewEducation();
               </Button>
             </Card.Body>
           </Card>
-          <Card style={{ width: "21rem" }}>
-            <Card.Img
-              variant="top"
-              src="https://ih1.redbubble.net/image.1028635848.2482/st,small,507x507-pad,600x600,f8f8f8.jpg"
-            />
-            <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Sneaker Head</Card.Title>
-              <Card.Text style={{ fontSize: "22px" }}>
-                eCommerce Apparel Store. Stay Fresh. Sneaker Head.
-              </Card.Text>
-              <Button variant="primary">
-                <a href="#" target="https://sneakerheads22.netlify.app/">Visit Sneaker Head</a>
-              </Button>
-            </Card.Body>
-          </Card>
+
+ 
         </div>
       </div>
       <div class="contacts-pg" ref={contactSection}>
