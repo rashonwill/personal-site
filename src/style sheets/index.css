@@ -149,6 +149,12 @@ margin: 40px;
   flex-direction: column;
 }
 
+.projecgs-gp h2{
+text-align: center;
+color: #fdfbf9;
+
+}
+
 .contacts-pg {
   background: #171717;
   width: 100vw;
