@@ -432,6 +432,10 @@ display:flex;
 margin: 10px;  
 padding: 10px; 
 }
+.android{
+display: flex;
+flex-direction: column;
+}
 
 .fa-android {
     padding: 10px 14px;
@@ -452,6 +456,13 @@ padding: 10px;
 .fa-android:hover {
     box-shadow: 5px 5px 5px 5px #d288a2;
 }
+
+
+.ios{
+display: flex;
+flex-direction: column;
+}
+
 
 .fa-apple {
     padding: 10px 14px;
