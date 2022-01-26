@@ -405,6 +405,34 @@ color:#fdfbf9;
 .fa-github:hover {
     background-color: #d288a2;
 }
+.icons{
+display:flex;
+margin: 10px;  
+padding: 10px;  
+}
+.fa-android {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.fa-apple {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
 
 .viewResume{
 background: #171717;
