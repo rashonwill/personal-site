@@ -313,15 +313,15 @@ viewEducation();
           <Card style={{ width: "21rem" }}>
             <Card.Img
               variant="top"
-              src="https://www.clipartmax.com/png/middle/365-3651977_section-image-new-york-times-logo-transparent.png"
+              src="https://wallpapercave.com/wp/wp10467984.jpg"
             />
             <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>The Times</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>Sneaker Heads</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                Current Events and World News Site. Stay informed! Visit the Times!
+                eCommerce Apparel Store. Stay Fresh. Stay Fit. Sneaker Heads.
               </Card.Text>
               <Button variant="primary">
-                <a href="#" target="_blank">Visit The Times</a>
+                <a href="#" target="_blank">Visit Sneaker Heads</a>
               </Button>
             </Card.Body>
           </Card>
