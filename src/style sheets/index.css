@@ -152,6 +152,8 @@ margin: 40px;
 .projects-pg h2{
 text-align: center;
 color: #fdfbf9;
+font-family: "Teko";
+font-size: 15px;
 
 }
 
@@ -161,6 +163,7 @@ color: #fdfbf9;
   height: 100vh;
   margin-top: 10px;
 }
+
 .btn-primary {
   color: #fdfbf9;
   background: #171717;
