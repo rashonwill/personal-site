@@ -422,14 +422,17 @@ color:#fdfbf9;
   height: 600px;
   width: 80%;
 }
+
 .icons i{
 margin: 20px;
 }
+
 .icons{
 display:flex;
 margin: 10px;  
 padding: 10px; 
 }
+
 .fa-android {
     padding: 10px 14px;
     -o-transition: .5s;
@@ -445,6 +448,11 @@ padding: 10px;
 
 }
 
+
+.fa-android:hover {
+    box-shadow: 5px 5px 10px 5px #d288a2;
+}
+
 .fa-apple {
     padding: 10px 14px;
     -o-transition: .5s;
@@ -457,6 +465,10 @@ padding: 10px;
   border: none;
   box-shadow: 5px 5px 10px 5px black;
   font-size: 40px;
+}
+
+.fa-apple:hover {
+    box-shadow: 5px 5px 10px 5px #d288a2;
 }
 
 .viewResume{
