@@ -459,6 +459,7 @@ flex-direction: column;
 
 .fa-android:hover {
     box-shadow: 5px 5px 5px 5px #d288a2;
+  color: #d288a2;
 }
 
 
@@ -485,6 +486,7 @@ flex-direction: column;
 
 .fa-apple:hover {
     box-shadow: 5px 5px 5px 5px #d288a2;
+  color: #d288a2;
 }
 
 .viewResume{
