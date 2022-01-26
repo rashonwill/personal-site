@@ -304,7 +304,7 @@ viewEducation();
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Sneaker Head</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                eCommerce Apparel Store. Stay Fresh. Sneaker Head.
+                eCommerce apparel store. Stay Fresh. Stay Crisp. Sneaker Head.
               </Card.Text>
               <Button variant="primary">
                 <a href="#" target="https://sneakerheads22.netlify.app/">Visit Sneaker Head</a>
