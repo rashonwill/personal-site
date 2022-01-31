@@ -309,7 +309,7 @@ viewEducation();
                 Hottest eCommerce apparel store, for your apparel needs. Stay Fresh. Stay Crisp. Sneaker Head.
               </Card.Text>
               <Button variant="primary">
-                <a href="#" target="https://sneakerheads22.netlify.app/">Visit Sneaker Head</a>
+                <a href="https://sneakerheads22.netlify.app/" target="_blank">Visit Sneaker Head</a>
               </Button>
             </Card.Body>
           </Card>
