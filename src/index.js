@@ -271,7 +271,7 @@ viewEducation();
               src="https://faribucket.s3.amazonaws.com/1631123442944_Fari%20-%20Fari.PNG"
             />
             <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Fari</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>Fari (Fullstack Application)</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
                 Video Sharing Platform for Original Film Creators and Lifestyle
                 Vloggers.
@@ -287,7 +287,7 @@ viewEducation();
               src="https://faribucket.s3.amazonaws.com/1630504972517_large%20pizza.jpeg"
             />
             <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Dirty Keto</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>Dirty Keto (Bootstrap/JQuery)</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
                 Guide to a pleasing Keto diet without giving up your favorite
                 meals.
@@ -304,7 +304,7 @@ viewEducation();
               src="https://ih1.redbubble.net/image.1028635848.2482/st,small,507x507-pad,600x600,f8f8f8.jpg"
             />
             <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Sneaker Head</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>Sneaker Head (ReactJS Application)</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
                 Hottest eCommerce apparel store, for your apparel needs. Stay Fresh. Stay Crisp. Sneaker Head.
               </Card.Text>
@@ -324,7 +324,7 @@ viewEducation();
               src="https://faribucket.s3.amazonaws.com/1631123442944_Fari%20-%20Fari.PNG"
             />
             <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Fari</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>Fari (React Native)</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
                 Video Sharing Platform for Original Film Creators and Lifestyle
                 Vloggers.
@@ -348,7 +348,7 @@ viewEducation();
               src="https://images.indianexpress.com/2021/08/Spotify.jpg"
             />
             <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Spotify</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>Spotify(React Native)</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
                 Spotify API Project, check out some of your favorite jams. 
               </Card.Text>
