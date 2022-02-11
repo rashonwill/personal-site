@@ -345,12 +345,12 @@ viewEducation();
   <Card style={{ width: "21rem" }}>
             <Card.Img
               variant="top"
-              src="https://images.indianexpress.com/2021/08/Spotify.jpg"
+              src="https://s.hdnux.com/photos/47/46/46/10381742/3/rawImage.jpg"
             />
             <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Spotify(React Native)</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>To do App (React Native)</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                Spotify API Project, check out some of your favorite jams. 
+                Keep track of your daily task with our todo app!
               </Card.Text>
 
  <div class="icons">
