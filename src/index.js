@@ -350,7 +350,7 @@ viewEducation();
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>To do App (React Native)</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                Keep track of your daily task with our todo app!
+                Keep track of your daily task! 
               </Card.Text>
 
  <div class="icons">
