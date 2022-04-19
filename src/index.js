@@ -332,11 +332,11 @@ viewEducation();
               <div class="icons">
                 <div class="ios">
                 <i class="fa fa-apple" aria-hidden="true"></i>
-<a href="#" target="_blank">iOS App</a>
+<a href="https://snack.expo.dev/@shonwill/fariapp" target="_blank">iOS App</a>
 </div>
 <div class="android">
                 <i class="fa fa-android" aria-hidden="true"></i>
-<a href="#" target="_blank">Android App</a>
+<a href="https://snack.expo.dev/@shonwill/fariapp" target="_blank">Android App</a>
 </div>
                 </div>
             </Card.Body>
@@ -356,11 +356,11 @@ viewEducation();
  <div class="icons">
                 <div class="ios">
                 <i class="fa fa-apple" aria-hidden="true"></i>
-<a href="#" target="_blank">iOS App</a>
+<a href="https://snack.expo.dev/@shonwill/to-do-app" target="_blank">iOS App</a>
 </div>
 <div class="android">
                 <i class="fa fa-android" aria-hidden="true"></i>
-<a href="#" target="_blank">Android App</a>
+<a href="https://snack.expo.dev/@shonwill/to-do-app" target="_blank">Android App</a>
 </div>
                 </div>
 
