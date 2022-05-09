@@ -326,7 +326,7 @@ viewEducation();
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Fari (React Native)</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                Video Sharing Platform for Original Film Creators and Lifestyle
+                Video Sharing, Marketplace Platform for Original Film Creators and Lifestyle
                 Vloggers.
               </Card.Text>
               <div class="icons">
