@@ -331,11 +331,11 @@ viewEducation();
               </Card.Text>
               <div class="icons">
                 <div class="ios">
-                <i class="fa fa-apple" aria-hidden="true"></i>
+                <i class="fa fa-apple" aria-hidden="true"><a href="https://snack.expo.dev/@shonwill/fariapp" target="_blank"></a></i>
 <a href="https://snack.expo.dev/@shonwill/fariapp" target="_blank">iOS App</a>
 </div>
 <div class="android">
-                <i class="fa fa-android" aria-hidden="true"></i>
+                <a href="https://snack.expo.dev/@shonwill/fariapp" target="_blank"><i class="fa fa-android" aria-hidden="true"></i></a>
 <a href="https://snack.expo.dev/@shonwill/fariapp" target="_blank">Android App</a>
 </div>
                 </div>
