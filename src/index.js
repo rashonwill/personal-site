@@ -379,11 +379,11 @@ viewEducation();
             <textarea name="message" placeholder="Let's Connect" required></textarea>
       <div class="image">
         <div class="linked">
-    <i class="fa fa-linkedin"></i>
+    <a href="https://www.linkedin.com/in/rashon-williams-26575291" target="_blank"><i class="fa fa-linkedin"></i></a>
     <a href="https://www.linkedin.com/in/rashon-williams-26575291" target="_blank">LinkedIn</a>
       </div>
 <div class="git">
-     <i class="fa fa-github" aria-hidden="true"></i>
+     <a href="https://github.com/rashonwill" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
     <a href="https://github.com/rashonwill" target="_blank">Github</a>
        </div>
 </div>
