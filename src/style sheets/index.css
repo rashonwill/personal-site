@@ -369,6 +369,8 @@ font-size: 16px;
 margin-left: 15px; 
 text-direction: none;
 color:#fdfbf9;  
+ font-family: 'Teko'; 
+ text-align: center; 
 }
 
 .linked{
@@ -394,7 +396,7 @@ color:#fdfbf9;
     background-color: transparent;
   cursor: pointer;
   border: none;
-  margin-left: 5px;
+  font-size: 50px;
 }
 .fa-linkedin:hover {
     background-color: #d288a2;
@@ -411,6 +413,7 @@ color:#fdfbf9;
     background-color: transparent;
   cursor: pointer;
   border: none;
+  font-size: 50px;
 }
 .fa-github:hover {
     background-color: #d288a2;
