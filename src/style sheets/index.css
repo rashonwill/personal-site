@@ -273,7 +273,7 @@ h1 {
   width: 250px;
   height: 65px;
   letter-spacing: 0.1rem;
-  margin-top: 55px;
+  margin-top: 60px;
 }
 
 .contact-me button:hover {
@@ -372,6 +372,7 @@ color:#fdfbf9;
  font-family: 'Teko'; 
  text-align: center; 
  margin-top: .5rem; 
+  color: #d288a2;
 }
 
 .linked{
