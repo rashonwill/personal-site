@@ -399,6 +399,7 @@ color:#fdfbf9;
   border: none;
   font-size: 50px;
   box-shadow: 1px 3px 3px 2px black;
+  color: #d288a2;
 }
 .fa-linkedin:hover {
     box-shadow: 1px 3px 3px 2px #d288a2;
@@ -417,6 +418,7 @@ color:#fdfbf9;
   border: none;
   font-size: 50px;
   box-shadow: 1px 3px 3px 2px black;
+  color: #d288a2;
 }
 .fa-github:hover {
   box-shadow: 1px 3px 3px 2px #d288a2;
