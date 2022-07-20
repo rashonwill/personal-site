@@ -454,14 +454,14 @@ flex-direction: column;
     background-color: transparent;
   cursor: pointer;
   border: none;
-  box-shadow: 5px 3px 2px 3px black;
+  box-shadow: 1px 3px 3px 2px black;
   font-size: 40px;
 
 }
 
 
 .fa-android:hover {
-    box-shadow: 5px 3px 2px 3px #d288a2;
+    box-shadow: 1px 3px 3px 2px #d288a2;
   color: #d288a2;
 }
 
@@ -483,12 +483,12 @@ flex-direction: column;
     background-color: transparent;
   cursor: pointer;
   border: none;
-  box-shadow: 5px 3px 2px 3px black;
+  box-shadow: 1px 3px 3px 2px black;
   font-size: 40px;
 }
 
 .fa-apple:hover {
-    box-shadow: 5px 3px 2px 3px #d288a2;
+    box-shadow: 1px 3px 3px 2px #d288a2;
   color: #d288a2;
 }
 
