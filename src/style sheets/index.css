@@ -397,9 +397,10 @@ color:#fdfbf9;
   cursor: pointer;
   border: none;
   font-size: 50px;
+  box-shadow: 1px 3px 3px 2px black;
 }
 .fa-linkedin:hover {
-    background-color: #d288a2;
+    box-shadow: 1px 3px 3px 2px #d288a2;
 }
 
 
@@ -414,9 +415,10 @@ color:#fdfbf9;
   cursor: pointer;
   border: none;
   font-size: 50px;
+  box-shadow: 1px 3px 3px 2px black;
 }
 .fa-github:hover {
-    background-color: #d288a2;
+  box-shadow: 1px 3px 3px 2px #d288a2;
 }
 
 .mobile-apps{
