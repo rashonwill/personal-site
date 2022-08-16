@@ -75,6 +75,17 @@ viewEducation();
   const goToAbout = () => aboutSection.current.scrollIntoView();
   const goToProjects = () => projectsSection.current.scrollIntoView();
   const goToContact = () => contactSection.current.scrollIntoView();
+  
+  const modalStyle = {
+    overlay: {
+        backgroundColor: 'transparent',
+        border: 'none',
+    },
+    content: {
+        background: 'transparent',
+        border: 'none',
+    }
+};
 
   return (
     <>
@@ -173,7 +184,7 @@ viewEducation();
 
         </div>
  <Modal
-        style={{opacity: 1}}
+        style={modalStyle}
         isOpen={resume}
         onRequestClose={() => setResume(false)}
       >
