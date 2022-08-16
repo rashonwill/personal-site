@@ -368,7 +368,57 @@ viewEducation();
           </Card>
 </div>
 
+<h2>Design Mockups</h2>
+<Card style={{ width: "21rem" }}>
+            <Card.Img
+              variant="top"
+              src="https://s.hdnux.com/photos/47/46/46/10381742/3/rawImage.jpg"
+            />
+            <Card.Body>
+              <Card.Title style={{ fontSize: "25px" }}>Backpackers</Card.Title>
+              <Card.Text style={{ fontSize: "22px" }}>
+                UI/UX Design Mockup with HTML/CSS for a shopping site. 
+              </Card.Text>
+
+            </Card.Body>
+          </Card>
+
+<Card style={{ width: "21rem" }}>
+            <Card.Img
+              variant="top"
+              src="https://s.hdnux.com/photos/47/46/46/10381742/3/rawImage.jpg"
+            />
+            <Card.Body>
+              <Card.Title style={{ fontSize: "25px" }}>Skaters Way</Card.Title>
+              <Card.Text style={{ fontSize: "22px" }}>
+                UI/UX Design Mockup with HTML/CSS for a video platform. 
+              </Card.Text>
+
+            </Card.Body>
+          </Card>
+
+<Card style={{ width: "21rem" }}>
+            <Card.Img
+              variant="top"
+              src="https://s.hdnux.com/photos/47/46/46/10381742/3/rawImage.jpg"
+            />
+            <Card.Body>
+              <Card.Title style={{ fontSize: "25px" }}>Container Homes</Card.Title>
+              <Card.Text style={{ fontSize: "22px" }}>
+                UI/UX Design Mockup with HTML/CSS for a realestate landing page. 
+              </Card.Text>
+
+            </Card.Body>
+          </Card>
+
+
+
       </div>
+
+
+
+
+
       <div class="contacts-pg" ref={contactSection}>
         <h1>Contact Me</h1>
         <div class="contact-form">
