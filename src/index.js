@@ -289,8 +289,7 @@ viewEducation();
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Dirty Keto (Bootstrap/JQuery)</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                Guide to a pleasing Keto diet without giving up your favorite
-                meals.
+                Keto centered restaurant website with cart functionality and Paypal sandbox checkout. 
               </Card.Text>
               <Button variant="primary">
                 <a href="https://dirtyketo-go.netlify.app/" target="_blank">Visit Dirty Keto</a>
