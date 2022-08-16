@@ -173,14 +173,7 @@ viewEducation();
 
         </div>
  <Modal
-        style={{ opacity: 1 }, 
-                      overlay : {
-                backgroundColor: null
-            },
-        content: {
-        background: null
-    {
-    }
+        style={{ opacity: 1, backgroundColor: null, background: null}}
         isOpen={resume}
         onRequestClose={() => setResume(false)}
       >
