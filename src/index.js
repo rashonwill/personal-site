@@ -380,7 +380,9 @@ viewEducation();
               <Card.Text style={{ fontSize: "22px" }}>
                 UI/UX Design Mockup with HTML/CSS for a shopping site. 
               </Card.Text>
-
+              <Button variant="primary">
+                <a href="https://rashonwill.github.io/backpackers/" target="_blank">Visit Backpackers</a>
+              </Button>
             </Card.Body>
           </Card>
 
@@ -394,7 +396,9 @@ viewEducation();
               <Card.Text style={{ fontSize: "22px" }}>
                 UI/UX Design Mockup with HTML/CSS for a video platform. 
               </Card.Text>
-
+                         <Button variant="primary">
+                <a href="https://rashonwill.github.io/skatersway/" target="_blank">Visit Skaters Way</a>
+              </Button>
             </Card.Body>
           </Card>
 
@@ -408,7 +412,9 @@ viewEducation();
               <Card.Text style={{ fontSize: "22px" }}>
                 UI/UX Design Mockup with HTML/CSS for a realestate landing page. 
               </Card.Text>
-
+                         <Button variant="primary">
+                <a href="https://rashonwill.github.io/containerhome/" target="_blank">Visit Container Homes</a>
+              </Button>
             </Card.Body>
           </Card>
 
@@ -422,7 +428,9 @@ viewEducation();
               <Card.Text style={{ fontSize: "22px" }}>
                 UI/UX Design Mockup with HTML/CSS for a NFT site landing page. 
               </Card.Text>
-
+            <Button variant="primary">
+                <a href="https://rashonwill.github.io/nft-me/" target="_blank">Visit NFT-ME</a>
+              </Button>
             </Card.Body>
           </Card>
 
