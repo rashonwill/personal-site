@@ -703,6 +703,10 @@ text-align: left;
 
 .ReactModal__Overlay.ReactModal__Overlay--after-open{
 background: transparent;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open{
+background: transparent;
   background-color: transparent;
   border: none;
 }
