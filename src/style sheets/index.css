@@ -701,11 +701,11 @@ text-align: left;
   justify-content: center;
 }
 
-.ReactModal__Overlay.ReactModal__Overlay--after-open{
+.ReactModalPortal .ReactModal__Overlay{
 background-color: transparent;
 }
 
-.ReactModal__Content.ReactModal__Content--after-open{
+.ReactModalPortal .ReactModal__Content{
   background: transparent;
   border: none;
   inset: 0;
