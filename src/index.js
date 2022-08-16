@@ -369,6 +369,7 @@ viewEducation();
 </div>
 
 <h2>Design Mockups</h2>
+<div class="desing-mockups">
 <Card style={{ width: "21rem" }}>
             <Card.Img
               variant="top"
@@ -425,7 +426,7 @@ viewEducation();
             </Card.Body>
           </Card>
 
-
+</div>
 
       </div>
 
