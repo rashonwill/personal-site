@@ -373,7 +373,7 @@ viewEducation();
 <Card style={{ width: "21rem" }}>
             <Card.Img
               variant="top"
-              src="https://s.hdnux.com/photos/47/46/46/10381742/3/rawImage.jpg"
+              src="https://faribucket.s3.amazonaws.com/backpackers+screenshot.PNG"
             />
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Backpackers</Card.Title>
@@ -387,7 +387,7 @@ viewEducation();
 <Card style={{ width: "21rem" }}>
             <Card.Img
               variant="top"
-              src="https://s.hdnux.com/photos/47/46/46/10381742/3/rawImage.jpg"
+              src="https://faribucket.s3.amazonaws.com/skatersway+screenshot.PNG"
             />
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Skaters Way</Card.Title>
@@ -401,7 +401,7 @@ viewEducation();
 <Card style={{ width: "21rem" }}>
             <Card.Img
               variant="top"
-              src="https://s.hdnux.com/photos/47/46/46/10381742/3/rawImage.jpg"
+              src="https://faribucket.s3.amazonaws.com/containerhomes+screenshot.PNG"
             />
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Container Homes</Card.Title>
@@ -415,7 +415,7 @@ viewEducation();
 <Card style={{ width: "21rem" }}>
             <Card.Img
               variant="top"
-              src="https://s.hdnux.com/photos/47/46/46/10381742/3/rawImage.jpg"
+              src="https://faribucket.s3.amazonaws.com/nftsite+screenshot.PNG"
             />
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>NFT ME</Card.Title>
