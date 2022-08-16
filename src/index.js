@@ -378,7 +378,7 @@ viewEducation();
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Backpackers</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                UI/UX Design Mockup with HTML/CSS for a shopping site. 
+                UI/UX Design Mockup with HTML/CSS for a shopping site for backpacks/shoes/hats. 
               </Card.Text>
               <Button variant="primary">
                 <a href="https://rashonwill.github.io/backpackers/" target="_blank">Visit Backpackers</a>
@@ -394,7 +394,7 @@ viewEducation();
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Skaters Way</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                UI/UX Design Mockup with HTML/CSS for a video platform. 
+                UI/UX Design Mockup with HTML/CSS for a video platform for skaters. 
               </Card.Text>
                          <Button variant="primary">
                 <a href="https://rashonwill.github.io/skatersway/" target="_blank">Visit Skaters Way</a>
