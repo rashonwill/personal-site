@@ -411,6 +411,20 @@ viewEducation();
             </Card.Body>
           </Card>
 
+<Card style={{ width: "21rem" }}>
+            <Card.Img
+              variant="top"
+              src="https://s.hdnux.com/photos/47/46/46/10381742/3/rawImage.jpg"
+            />
+            <Card.Body>
+              <Card.Title style={{ fontSize: "25px" }}>NFT ME</Card.Title>
+              <Card.Text style={{ fontSize: "22px" }}>
+                UI/UX Design Mockup with HTML/CSS for a NFT site landing page. 
+              </Card.Text>
+
+            </Card.Body>
+          </Card>
+
 
 
       </div>
