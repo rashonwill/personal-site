@@ -701,6 +701,12 @@ text-align: left;
   justify-content: center;
 }
 
+.ReactModal__Overlay.ReactModal__Overlay--after-open{
+background: transparent;
+  background-color: transparent;
+  border: none;
+}
+
 
 /* CUBE */
 
