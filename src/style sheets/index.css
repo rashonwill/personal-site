@@ -702,13 +702,13 @@ text-align: left;
 }
 
 .ReactModal__Overlay.ReactModal__Overlay--after-open{
-background: transparent;
+background-color: transparent;
 }
 
 .ReactModal__Content.ReactModal__Content--after-open{
-background: transparent;
-  background-color: transparent;
+  background: transparent;
   border: none;
+  inset: 0;
 }
 
 
