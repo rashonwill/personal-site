@@ -144,7 +144,7 @@ margin: 40px;
 .projects-pg {
   background: #171717;
   width: 100vw;
-  height: 150vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
 }
@@ -161,7 +161,7 @@ font-size: 24px;
   background: #171717;
   width: 100vw;
   height: 100vh;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .btn-primary {
@@ -684,11 +684,20 @@ text-align: left;
   text-align: center;
 }
 
-.current-pg{
+.design-mockups{
   border-radius: 50%;
   width: 30px;
   height: 30px;
   box-shadow: 2px 2px 2px 2px #d288a2;
+}
+
+.mobile-apps{
+  display: flex;
+  margin-top: 70px;
+  margin: 1rem auto;
+  height: 600px;
+  width: 80%;
+  justify-content: center;
 }
 
 /* CUBE */
