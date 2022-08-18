@@ -355,10 +355,10 @@ viewEducation();
   <Card style={{ width: "21rem" }}>
             <Card.Img
               variant="top"
-              src="https://s.hdnux.com/photos/47/46/46/10381742/3/rawImage.jpg"
+              src="https://faribucket.s3.amazonaws.com/My+project-1+(36).png"
             />
             <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>To do App (React Native)</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>Todo App (React Native)</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
                 Keep track of your daily task! 
               </Card.Text>
