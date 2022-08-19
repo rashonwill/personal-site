@@ -288,7 +288,7 @@ viewEducation();
                 Vloggers.
               </Card.Text>
               <Button variant="primary">
-                <a href="https://fari-test.netlify.app" target="_blank">Visit Fari</a>
+                <a href="https://fari-test.netlify.app/login" target="_blank">Visit Fari</a>
               </Button>
             </Card.Body>
           </Card>
