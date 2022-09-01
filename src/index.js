@@ -379,7 +379,7 @@ viewEducation();
 </div>
 
 
-
+</div>
 
 
 
