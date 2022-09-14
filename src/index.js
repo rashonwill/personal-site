@@ -119,7 +119,7 @@ viewEducation();
         <div class="background-pic">
           <img
             class="bg-image"
-            src="https://faribucket.s3.amazonaws.com/1629464622097_Rashon.png"
+            src="https://faribucket.s3.amazonaws.com/My+project-1+(41).png"
           ></img>
         </div>
       </div>
