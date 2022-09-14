@@ -165,13 +165,16 @@ font-size: 24px;
 }
 
 .btn-primary {
-  color: #fdfbf9;
-  background: #171717;
-  border: 2px solid #d288a2;
-  margin: 10px;
-  margin-right: 35px;
-  font-size: 24px;
-  font-family: "Teko";
+    color: #fdfbf9;
+    background: #171717;
+    border: 2px solid #d288a2;
+    margin: 10px 35px 10px 10px;
+    font-size: 24px;
+    font-family: "Teko";
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    right: 1%;
 }
 
 .btn-primary:hover {
@@ -438,12 +441,17 @@ color:#fdfbf9;
 margin: 20px;
 }
 
-.icons{
-display:flex;
-margin: 10px;  
-padding: 10px; 
-  justify-content: center;
+.icons {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
+
 .android{
 display: flex;
 flex-direction: column;
