@@ -1,3 +1,3 @@
 # personal-site
 
-https://rashons-portfolio.netlify.app/
+https://rashonwilliams.dev/
