@@ -130,8 +130,8 @@ viewEducation();
             <p>
               Hello! So, a little about me... I've been an IT professional for
               the past 8 years. I have an Assoicates in Network Adminstration
-              and currently looking to start a career in frontend Web
-              Development.
+              and currently looking to start a career in <em>Frontend Web
+              Development</em>.
               <br></br>
               <br></br>
               I've worked in various IT positions, starting from a Software
