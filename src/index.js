@@ -276,7 +276,7 @@ viewEducation();
 <h2> Web Applicatons </h2>
 
         <div class="project-cards">
-          <Card style={{ width: "21rem" }}>
+          <Card style={{ width: "17rem" }}>
             <Card.Img
               variant="top"
               src="https://faribucket.s3.amazonaws.com/1631123442944_Fari%20-%20Fari.PNG"
@@ -292,7 +292,7 @@ viewEducation();
               </Button>
             </Card.Body>
           </Card>
-          <Card style={{ width: "21rem" }}>
+          <Card style={{ width: "17rem" }}>
             <Card.Img
               variant="top"
               src="https://faribucket.s3.amazonaws.com/1630504972517_large%20pizza.jpeg"
@@ -308,7 +308,7 @@ viewEducation();
             </Card.Body>
           </Card>
 
-         <Card style={{ width: "21rem" }}>
+         <Card style={{ width: "17rem" }}>
             <Card.Img
               variant="top"
               src="https://ih1.redbubble.net/image.1028635848.2482/st,small,507x507-pad,600x600,f8f8f8.jpg"
@@ -328,7 +328,7 @@ viewEducation();
         </div>
 <h2>Mobile Applications</h2>
 <div class="mobile-apps">
-<Card style={{ width: "21rem" }}>
+<Card style={{ width: "17rem" }}>
             <Card.Img
               variant="top"
               src="https://faribucket.s3.amazonaws.com/1631123442944_Fari%20-%20Fari.PNG"
@@ -352,7 +352,7 @@ viewEducation();
             </Card.Body>
           </Card>
 
-  <Card style={{ width: "21rem" }}>
+  <Card style={{ width: "17rem" }}>
             <Card.Img
               variant="top"
               src="https://faribucket.s3.amazonaws.com/My+project-1+(36).png"
