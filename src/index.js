@@ -284,7 +284,7 @@ viewEducation();
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Fari (Fullstack Application)</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                Subscription based, video Sharing platform with marketplace for content creators.
+                Subscription based, video sharing platform with marketplace for content creators.
               </Card.Text>
               <Button variant="primary">
                 <a href="https://fari-test.netlify.app/login" target="_blank">Visit Fari</a>
@@ -335,7 +335,7 @@ viewEducation();
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Fari (React Native)</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                Subscription based, video Sharing platform with marketplace for content creators.
+                Subscription based, video sharing platform with marketplace for content creators.
               </Card.Text>
               <div class="icons">
                 <div class="ios">
