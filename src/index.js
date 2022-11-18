@@ -279,13 +279,12 @@ viewEducation();
           <Card style={{ width: "17rem" }}>
             <Card.Img
               variant="top"
-              src="https://faribucket.s3.amazonaws.com/1631123442944_Fari%20-%20Fari.PNG"
+              src="https://drotje36jteo8.cloudfront.net/1667408386418_Logo Black.png"
             />
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Fari (Fullstack Application)</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                Video Sharing, Marketplace Platform for Original Film Creators and Lifestyle
-                Vloggers.
+                Subscription based, video Sharing platform with marketplace for content creators.
               </Card.Text>
               <Button variant="primary">
                 <a href="https://fari-test.netlify.app/login" target="_blank">Visit Fari</a>
@@ -331,13 +330,12 @@ viewEducation();
 <Card style={{ width: "17rem" }}>
             <Card.Img
               variant="top"
-              src="https://faribucket.s3.amazonaws.com/1631123442944_Fari%20-%20Fari.PNG"
+              src="https://drotje36jteo8.cloudfront.net/1667408386418_Logo Black.png"
             />
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Fari (React Native)</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                Video Sharing, Marketplace Platform for Original Film Creators and Lifestyle
-                Vloggers.
+                Subscription based, video Sharing platform with marketplace for content creators.
               </Card.Text>
               <div class="icons">
                 <div class="ios">
