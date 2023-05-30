@@ -287,7 +287,7 @@ viewEducation();
                 Subscription based, video sharing platform with marketplace for content creators.
               </Card.Text>
               <Button variant="primary">
-                <a href="https://fari-test.netlify.app/login" target="_blank">Visit Fari</a>
+                <a href="https://letsfari.com/register" target="_blank">Visit Fari</a>
               </Button>
             </Card.Body>
           </Card>
