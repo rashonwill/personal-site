@@ -325,7 +325,7 @@ viewEducation();
 
         
         </div>
-// <h2>Mobile Applications</h2>
+
 <div class="mobile-apps">
          <Card style={{ width: "17rem" }}>
             <Card.Img
