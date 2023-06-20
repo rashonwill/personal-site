@@ -325,55 +325,40 @@ viewEducation();
 
         
         </div>
-<h2>Mobile Applications</h2>
+// <h2>Mobile Applications</h2>
 <div class="mobile-apps">
-<Card style={{ width: "17rem" }}>
-            <Card.Img
-              variant="top"
-              src="https://drotje36jteo8.cloudfront.net/1667408386418_Logo Black.png"
-            />
-            <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Fari (React Native)</Card.Title>
-              <Card.Text style={{ fontSize: "22px" }}>
-                Subscription based, video sharing platform with marketplace for content creators.
-              </Card.Text>
-              <div class="icons">
-                <div class="ios">
-                <a href="https://snack.expo.dev/@shonwill/farimobile?platform=ios" target="_blank"><i class="fa fa-apple" aria-hidden="true"></i></a>
-                <a href="https://snack.expo.dev/@shonwill/farimobile?platform=ios" target="_blank">iOS App</a>
-</div>
-<div class="android">
-                <a href="https://snack.expo.dev/@shonwill/farimobile?platform=android" target="_blank"><i class="fa fa-android" aria-hidden="true"></i></a>
-                <a href="https://snack.expo.dev/@shonwill/farimobile?platform=android" target="_blank">Android App</a>
-</div>
-                </div>
-            </Card.Body>
-          </Card>
-
-  <Card style={{ width: "17rem" }}>
+         <Card style={{ width: "17rem" }}>
             <Card.Img
               variant="top"
               src="https://faribucket.s3.amazonaws.com/My+project-1+(36).png"
             />
             <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Todo App (React Native)</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>Todos</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
-                Keep track of your daily task! 
+                Keep track of your daily task!
               </Card.Text>
-
- <div class="icons">
-                <div class="ios">
-                <a href="https://snack.expo.dev/@shonwill/todo-app?platform=ios" target="_blank"><i class="fa fa-apple" aria-hidden="true"></i></a>
-                <a href="https://snack.expo.dev/@shonwill/todo-app?platform=ios" target="_blank">iOS App</a>
-</div>
-<div class="android">
-                <a href="https://snack.expo.dev/@shonwill/todo-app?platform=android" target="_blank"><i class="fa fa-android" aria-hidden="true"></i></a>
-                <a href="https://snack.expo.dev/@shonwill/todo-app?platform=android" target="_blank">Android App</a>
-</div>
-                </div>
-
+              <Button variant="primary">
+                <a href="https://rashonwill.github.io/todo_webapplication/" target="_blank">View Todo App</a>
+              </Button>
             </Card.Body>
           </Card>
+
+          <Card style={{ width: "17rem" }}>
+            <Card.Img
+              variant="top"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX6nQmjB4t7r2J5CkkQZNbKMF2oSnaiMBTwg&usqp=CAU"
+            />
+            <Card.Body>
+              <Card.Title style={{ fontSize: "25px" }}>Calculator</Card.Title>
+              <Card.Text style={{ fontSize: "22px" }}>
+                Math Calculator
+              </Card.Text>
+              <Button variant="primary">
+                <a href="https://coolcalculator.netlify.app/" target="_blank">View Calculator</a>
+              </Button>
+            </Card.Body>
+          </Card>
+
 </div>
 
 
