@@ -282,7 +282,7 @@ viewEducation();
               src="https://drotje36jteo8.cloudfront.net/1667408386418_Logo Black.png"
             />
             <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Fari (Fullstack Application)</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>Fari</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
                 Subscription based, video sharing platform with marketplace for content creators.
               </Card.Text>
@@ -297,7 +297,7 @@ viewEducation();
               src="https://faribucket.s3.amazonaws.com/1630504972517_large%20pizza.jpeg"
             />
             <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Dirty Keto (Bootstrap/JQuery)</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>Dirty Keto</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
                 Keto centered restaurant website with cart functionality and Paypal sandbox checkout. 
               </Card.Text>
@@ -313,7 +313,7 @@ viewEducation();
               src="https://ih1.redbubble.net/image.1028635848.2482/st,small,507x507-pad,600x600,f8f8f8.jpg"
             />
             <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Sneaker Head (ReactJS)</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>Sneaker Head</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
                 Hottest eCommerce apparel store, for your apparel needs. Stay Fresh. Stay Crisp. Sneaker Head.
               </Card.Text>
