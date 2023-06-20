@@ -346,7 +346,7 @@ viewEducation();
           <Card style={{ width: "17rem" }}>
             <Card.Img
               variant="top"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX6nQmjB4t7r2J5CkkQZNbKMF2oSnaiMBTwg&usqp=CAU"
+              src="https://fari-prod-hls-069544520198.s3.amazonaws.com/math-education-illustration.jpeg"
             />
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Calculator</Card.Title>
