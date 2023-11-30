@@ -279,7 +279,7 @@ viewEducation();
           <Card style={{ width: "17rem" }}>
             <Card.Img
               variant="top"
-              src="https://d2v76lnwus9o6a.cloudfront.net/1700535607500_Color logo - no background.png"
+              src="https://d2v76lnwus9o6a.cloudfront.net/1701361356911_Social_Profile_Facebook.jpg"
             />
             <Card.Body>
               <Card.Title style={{ fontSize: "25px" }}>Three28</Card.Title>
