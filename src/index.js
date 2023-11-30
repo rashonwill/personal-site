@@ -109,10 +109,7 @@ viewEducation();
         <div class="resume">
           <div class="access">
             <h1> Hi, I'm Rashon Williams. Welcome to my Portfolio!
-           // <div class="glitch"> CREATOR
-           //  <span id="span">CREATOR</span>
-           //  <span id="span">CREATOR</span>
-           //  </div>
+
              </h1>
           </div>
         </div>
