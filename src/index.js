@@ -279,15 +279,15 @@ viewEducation();
           <Card style={{ width: "17rem" }}>
             <Card.Img
               variant="top"
-              src="https://drotje36jteo8.cloudfront.net/1667408386418_Logo Black.png"
+              src="https://d2v76lnwus9o6a.cloudfront.net/1700535607500_Color logo - no background.png"
             />
             <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Fari</Card.Title>
+              <Card.Title style={{ fontSize: "25px" }}>Three28</Card.Title>
               <Card.Text style={{ fontSize: "22px" }}>
                 Subscription based, video sharing platform with marketplace for content creators.
               </Card.Text>
               <Button variant="primary">
-                <a href="https://letsfari.com/register" target="_blank">Visit Fari</a>
+                <a href="https://three28.app/" target="_blank">Visit Three28</a>
               </Button>
             </Card.Body>
           </Card>
