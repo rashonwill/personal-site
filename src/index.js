@@ -288,7 +288,7 @@ const App = () => {
               </p>
               <div className="about__stats">
                 <div className="stat">
-                  <span className="stat__num">9+</span>
+                  <span className="stat__num">12+</span>
                   <span className="stat__label">Years in IT</span>
                 </div>
                 <div className="stat">
