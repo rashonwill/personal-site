@@ -1,397 +1,584 @@
-import React, { Component } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Nav, Button, Card } from "react-bootstrap";
 import "./style sheets/index.css";
-import { useState, useEffect, useRef } from "react";
-import Modal from "react-modal";
-import { $ }  from "react-jquery-plugin";
+
+const projects = [
+  {
+    id: 1,
+    title: "Three28",
+    category: "webapp",
+    description: "Subscription-based video sharing platform with marketplace for content creators.",
+    image: "https://d2v76lnwus9o6a.cloudfront.net/1701361356911_Social_Profile_Facebook.jpg",
+    url: "https://three28.app/",
+    cta: "Visit Three28",
+  },
+  {
+    id: 2,
+    title: "Dirty Keto",
+    category: "webapp",
+    description: "Keto-centered restaurant site with cart functionality and PayPal sandbox checkout.",
+    image: "https://faribucket.s3.amazonaws.com/1630504972517_large%20pizza.jpeg",
+    url: "https://dirtyketo-go.netlify.app/",
+    cta: "Visit Dirty Keto",
+  },
+  {
+    id: 3,
+    title: "Sneaker Head",
+    category: "webapp",
+    description: "eCommerce apparel store for sneakers and fashion. Stay Fresh. Stay Crisp.",
+    image: "https://ih1.redbubble.net/image.1028635848.2482/st,small,507x507-pad,600x600,f8f8f8.jpg",
+    url: "https://sneakerhead22.herokuapp.com/",
+    cta: "Visit Sneaker Head",
+  },
+  {
+    id: 4,
+    title: "Todos",
+    category: "miniapp",
+    description: "Clean, minimalist daily task tracker to keep you organized and on track.",
+    image: "https://faribucket.s3.amazonaws.com/My+project-1+(36).png",
+    url: "https://rashonwill.github.io/todo_webapplication/",
+    cta: "View Todo App",
+  },
+  {
+    id: 5,
+    title: "Calculator",
+    category: "miniapp",
+    description: "Sleek math calculator with a clean UI and full arithmetic operations.",
+    image: "https://fari-prod-hls-069544520198.s3.amazonaws.com/math-education-illustration.jpeg",
+    url: "https://coolcalculator.netlify.app/",
+    cta: "View Calculator",
+  },
+];
+
+const skillGroups = [
+  {
+    category: "Frontend",
+    items: ["React", "JavaScript", "HTML5", "CSS3", "Bootstrap", "jQuery", "GSAP"],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "Express", "PostgreSQL", "MySQL", "REST APIs", "JWT", "WebSockets"],
+  },
+  {
+    category: "Tools & Cloud",
+    items: ["GitHub", "VS Code", "AWS S3", "Heroku", "Netlify", "Nodemailer"],
+  },
+  {
+    category: "IT & Systems",
+    items: ["VMware", "Active Directory", "Windows Server", "Remote Desktop"],
+  },
+];
+
+const timeline = [
+  {
+    year: "2021 – Present",
+    title: "Technical Support Rep",
+    company: "Paperless Environments",
+    location: "Baton Rouge, LA",
+  },
+  {
+    year: "2019 – 2021",
+    title: "Systems Analyst",
+    company: "Baton Rouge General Medical Center",
+    location: "Baton Rouge, LA",
+  },
+  {
+    year: "2018 – 2019",
+    title: "IT Support Level II",
+    company: "eQ Health Solutions",
+    location: "Baton Rouge, LA",
+  },
+  {
+    year: "2015 – 2019",
+    title: "Quality Assurance Analyst",
+    company: "eQ Health Solutions",
+    location: "Baton Rouge, LA",
+  },
+  {
+    year: "2014 – 2015",
+    title: "IT Support Tech",
+    company: "eQ Health Solutions",
+    location: "Baton Rouge, LA",
+  },
+];
+
+const education = [
+  {
+    year: "2021",
+    title: "Full Stack Development Certificate",
+    school: "Louisiana State University",
+    detail: "26-Week Bootcamp · Baton Rouge, LA",
+  },
+  {
+    year: "2014",
+    title: "A.A.S. Information Technology",
+    school: "ITT Technical Institute",
+    detail: "Network Systems Administration · GPA 3.69",
+  },
+  {
+    year: "2010",
+    title: "High School Diploma",
+    school: "Assumption High School",
+    detail: "Napoleonville, LA · GPA 3.1",
+  },
+];
+
+const NAV_LINKS = ["Home", "About", "Portfolio", "Resume", "Contact"];
 
 const App = () => {
-  const [resume, setResume] = useState(false);
-  
-  
-  class Example extends Component{
-    componentDidMount() {
-    viewEducation();
-    viewHistory();
-    viewSkills();
-    viewContact();
-    nextBtn();
-    previousBtn();
-    firstPage();
-    }
-  }
-  
-  function firstPage(){
-  $('.page1').addClass('current-pg');
-  }
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [showScrollUp, setShowScrollUp] = useState(false);
+  const [activeFilter, setActiveFilter] = useState("all");
 
-  function viewEducation(){
-    $('.education').css('display', 'initial');
-  $('.workhistory').css('display', 'none');
-  $('.skills').css('display', 'none');
-  $('.contact').css('display', 'none');
-  $('.page1').addClass('current-pg').siblings().removeClass("current-pg");
-  }
-    function viewHistory(){
-    $('.workhistory').css('display', 'initial');
-  $('.education').css('display', 'none');
-  $('.skills').css('display', 'none');
-  $('.contact').css('display', 'none');
-  $('.page2').addClass('current-pg').siblings().removeClass("current-pg");
-  }
-  
-    function viewSkills(){
-    $('.skills').css('display', 'initial');
-  $('.workhistory').css('display', 'none');
-  $('.education').css('display', 'none');
-  $('.contact').css('display', 'none');
-  $('.page3').addClass('current-pg').siblings().removeClass("current-pg");
-  }
- 
-function nextBtn(){
-if($('.workhistory').css('display') === 'none'){
-viewHistory();
-}else if($('.workhistory').css('display') !== 'none') {
-viewSkills();
-  }
-};
+  const heroRef = useRef(null);
+  const aboutRef = useRef(null);
+  const portfolioRef = useRef(null);
+  const resumeRef = useRef(null);
+  const contactRef = useRef(null);
 
-function previousBtn(){
-if($('.skills').css('display') !== 'none'){
-viewHistory();
-}else if($('.workhistory').css('display') !== 'none') {
-viewEducation();
-   }
-};
-  
-  const homeSection = useRef(null);
-  const aboutSection = useRef(null);
-  const projectsSection = useRef(null);
-  const contactSection = useRef(null);
+  const refMap = {
+    Home: heroRef,
+    About: aboutRef,
+    Portfolio: portfolioRef,
+    Resume: resumeRef,
+    Contact: contactRef,
+  };
 
-  const goToHome = () => homeSection.current.scrollIntoView();
-  const goToAbout = () => aboutSection.current.scrollIntoView();
-  const goToProjects = () => projectsSection.current.scrollIntoView();
-  const goToContact = () => contactSection.current.scrollIntoView();
-  
-  const modalStyle = {
-    overlay: {
-        backgroundColor: 'transparent',
-        border: 'none',
-    },
-    content: {
-        background: 'transparent',
-        border: 'none',
-    }
-};
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 60);
+      setShowScrollUp(window.scrollY > 500);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const scrollTo = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+    setMenuOpen(false);
+  };
+
+  const filteredProjects =
+    activeFilter === "all"
+      ? projects
+      : projects.filter((p) => p.category === activeFilter);
 
   return (
     <>
-      <Navbar bg="dark" variant="dark">
-        <Nav className="links">
-          <Nav.Link id="home" onClick={goToHome}>
-            Home
-          </Nav.Link>
-          <Nav.Link id="about" onClick={goToAbout}>
-            About
-          </Nav.Link>
-          <Nav.Link id="projects" onClick={goToProjects}>
-            Projects
-          </Nav.Link>
-          <Nav.Link id="contact" onClick={goToContact}>
-            Contact
-          </Nav.Link>
-        </Nav>
-      </Navbar>{" "}
-      <div class="home-pg" ref={homeSection}>
-        <div class="resume">
-          <div class="access">
-            <h1> Hi, I'm Rashon Williams. Welcome to my Portfolio!
+      {/* ── NAV ── */}
+      <nav className={`nav${scrolled ? " nav--scrolled" : ""}`}>
+        <div className="nav__brand" onClick={() => scrollTo(heroRef)}>
+          R<span>W</span>
+        </div>
 
-             </h1>
+        <ul className={`nav__links${menuOpen ? " nav__links--open" : ""}`}>
+          {NAV_LINKS.map((label) => (
+            <li key={label}>
+              <button onClick={() => scrollTo(refMap[label])}>{label}</button>
+            </li>
+          ))}
+        </ul>
+
+        <button
+          className={`nav__burger${menuOpen ? " nav__burger--open" : ""}`}
+          onClick={() => setMenuOpen((o) => !o)}
+          aria-label="Toggle menu"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </nav>
+
+      {/* ── HERO ── */}
+      <section className="hero" ref={heroRef}>
+        <div className="hero__bg">
+          <div className="hero__orb hero__orb--1" />
+          <div className="hero__orb hero__orb--2" />
+          <div className="hero__grid" />
+        </div>
+
+        <div className="hero__content">
+          <p className="hero__eyebrow">Full Stack Developer</p>
+          <h1 className="hero__name">
+            <span className="hero__name-first">Rashon</span>
+            <span className="hero__name-last">Williams</span>
+          </h1>
+          <p className="hero__tagline">
+            Building elegant, performant web experiences — from concept to deployment.
+          </p>
+          <div className="hero__ctas">
+            <button
+              className="btn btn--primary"
+              onClick={() => scrollTo(portfolioRef)}
+            >
+              View Portfolio
+            </button>
+            <a
+              className="btn btn--outline"
+              href="/IT Resume Nov. 2024.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Resume
+            </a>
           </div>
         </div>
-        <div class="background-pic">
-          <img
-            class="bg-image"
-            src="https://faribucket.s3.amazonaws.com/My+project-1+(41).png"
-          ></img>
-        </div>
-      </div>
-      <div class="about-pg" ref={aboutSection}>
-        <h1>About</h1>
-        <div class="within-about">
-          <div class="about-me">
-            <p>
-              Hello! So, a little about me... I've been an IT professional for
-              the past 9 years. I have an Assoicates in Network Adminstration
-              and currently looking to start a career in <em>
-              Development</em>.
-              <br></br>
-              <br></br>
-              I've worked in various IT positions, starting from a Software
-              Support Tech, a Quality Assurance Analyst, a Systems Analyst and
-              currently working as a Technical Support Specialist.
-              <br></br>
-              <br></br>
-              Go ahead and take a peak at my resume for more!
-            </p>
+
+        <button
+          className="hero__scroll-indicator"
+          onClick={() => scrollTo(aboutRef)}
+          aria-label="Scroll to about"
+        >
+          <span />
+        </button>
+      </section>
+
+      {/* ── ABOUT ── */}
+      <section className="about" ref={aboutRef}>
+        <div className="section__inner">
+          <p className="section-label">About Me</p>
+          <h2 className="section-title">
+            The Mind <span className="accent">Behind</span> the Code
+          </h2>
+
+          <div className="about__grid">
+            <div className="about__bio">
+              <p>
+                With 9+ years in IT — spanning software support, quality assurance, systems
+                analysis, and technical support — I bring a rare mix of deep operational
+                knowledge and hands-on development skill.
+              </p>
+              <p>
+                After completing LSU's Full Stack Development Bootcamp, I've been building
+                web applications that merge clean design with solid engineering. I'm actively
+                looking to transition into a full-time development role.
+              </p>
+              <div className="about__stats">
+                <div className="stat">
+                  <span className="stat__num">9+</span>
+                  <span className="stat__label">Years in IT</span>
+                </div>
+                <div className="stat">
+                  <span className="stat__num">5+</span>
+                  <span className="stat__label">Projects Built</span>
+                </div>
+                <div className="stat">
+                  <span className="stat__num">2</span>
+                  <span className="stat__label">Degrees / Certs</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="about__visual">
+              <div className="cube-wrap">
+                <div className="cube-scene">
+                  <div id="cube">
+                    <div className="face front">
+                      <img
+                        src="https://img.icons8.com/ios-filled/50/ffffff/javascript-logo.png"
+                        alt="JavaScript"
+                      />
+                    </div>
+                    <div className="face back">
+                      <img
+                        src="https://img.icons8.com/ios-filled/50/ffffff/react-native.png"
+                        alt="React"
+                      />
+                    </div>
+                    <div className="face right">
+                      <img
+                        src="https://img.icons8.com/metro/50/ffffff/sql.png"
+                        alt="SQL"
+                      />
+                    </div>
+                    <div className="face left">
+                      <img
+                        src="https://img.icons8.com/ios-filled/50/ffffff/heroku.png"
+                        alt="Heroku"
+                      />
+                    </div>
+                    <div className="face top">
+                      <img
+                        src="https://img.icons8.com/ios-filled/50/ffffff/css-filetype.png"
+                        alt="CSS"
+                      />
+                    </div>
+                    <div className="face bottom">
+                      <img
+                        src="https://img.icons8.com/windows/32/ffffff/nodejs.png"
+                        alt="Node.js"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="skills-grid">
+                {skillGroups.map(({ category, items }) => (
+                  <div key={category} className="skill-group">
+                    <h4 className="skill-group__title">{category}</h4>
+                    <div className="skill-group__tags">
+                      {items.map((item) => (
+                        <span key={item} className="skill-tag">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-          <div class="resume-btn">
-            <Button variant="dark" onClick={() => {
-            setResume(true); firstPage() }}>Resume</Button>{" "}
+        </div>
+      </section>
 
+      {/* ── PORTFOLIO ── */}
+      <section className="portfolio" ref={portfolioRef}>
+        <div className="section__inner">
+          <p className="section-label">My Work</p>
+          <h2 className="section-title">
+            Portfolio <span className="accent">Gallery</span>
+          </h2>
+
+          <div className="portfolio__filters">
+            {[
+              ["all", "All"],
+              ["webapp", "Web Apps"],
+              ["miniapp", "Mini Apps"],
+            ].map(([val, label]) => (
+              <button
+                key={val}
+                className={`filter-btn${
+                  activeFilter === val ? " filter-btn--active" : ""
+                }`}
+                onClick={() => setActiveFilter(val)}
+              >
+                {label}
+              </button>
+            ))}
           </div>
-</div>
 
-<div class ="container">  
-  <div id ="cube"> 
-    
-<div class ="front">
-<img src="https://img.icons8.com/ios-filled/50/000000/javascript-logo.png"/>
-  </div>
-    
- <div class ="back">
-<img src="https://img.icons8.com/ios-filled/50/000000/react-native.png"/>
-  </div>  
-    
- <div class ="right">
-<img src="https://img.icons8.com/metro/50/000000/sql.png"/>
-  </div>  
-    
-    
-     <div class ="left">
-  <img src="https://img.icons8.com/ios-filled/50/000000/heroku.png"/>
-  </div>   
-    
-    
-       <div class ="top">
-<img src="https://img.icons8.com/ios-filled/50/000000/css-filetype.png"/>
-  </div>    
-    
-    
-       <div class ="bottom"> 
-<img src="https://img.icons8.com/windows/32/000000/nodejs.png"/>
-  </div>
-
-  </div>
-  </div>
-
+          <div className="portfolio__grid">
+            {filteredProjects.map((project) => (
+              <div key={project.id} className="project-card">
+                <div className="project-card__img-wrap">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="project-card__img"
+                  />
+                  <div className="project-card__overlay">
+                    <h3 className="project-card__title">{project.title}</h3>
+                    <p className="project-card__desc">{project.description}</p>
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn--sm btn--primary"
+                    >
+                      {project.cta} →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
- <Modal
-        style={modalStyle}
-        isOpen={resume}
-        onRequestClose={() => setResume(false)}
-      >
-        <div className="viewResume">
-         <>
-          <div class="popup">
+      </section>
 
+      {/* ── RESUME ── */}
+      <section className="resume-section" ref={resumeRef}>
+        <div className="section__inner">
+          <p className="section-label">Career</p>
+          <h2 className="section-title">
+            Resume &amp; <span className="accent">Experience</span>
+          </h2>
 
-<div class="education">
-  <h1> Education </h1>
-  <div class="school">
-    <h2>Louisiana State University(Baton Rouge, LA)</h2>
-    <ul>
-      <li>Full Stack Development Bootcamp </li>
-      <li>Certificate of Completion received July 2021 (26 Week Program)</li>
-    </ul>
-   </div>
-  <div class="school">
-    <h2>ITT Technical Institute(Baton Rouge, LA)</h2>
-    <ul>
-      <li>Associates Degree: Information Technology: Network Systems Administration</li>
-      <li>GPA: 3.69</li>
-      <li>Member of the National Technical Honors Society</li>
-    </ul>
-   </div>
-   <div class="school">
-    <h2>Assumption High School(Napoleonville, LA)</h2>
-    <ul>
-      <li>High School Diploma received 2010 </li>
-      <li>GPA: 3.1</li>
-      <li>Member of Assumption High Computer Club </li>
-     </ul>
-   </div>
-</div>
-<div class="workhistory">
-  <h1> Employment History</h1>
-  <div class="job">
-    <h3 id="company">eQ Health Solutions(Baton Rouge, LA)</h3>
-    <ul>
-      <li>IT Support Tech (March 2014-June 2015)</li>
-      <li>Quality Assurance Analyst (June 2015-August 2019)</li>
-      <li>IT Support Level II (September 2018-August 2019)</li>
-    </ul>
-  </div>
-  <div class="job">
-      <h3 id="company">Baton Rouge General Medical Center(Baton Rouge, LA)</h3>
-        <ul>
-      <li>Systems Analyst (August 2019 – January 2021)</li>
+          <div className="resume-grid">
+            <div className="resume-col">
+              <h3 className="resume-col__heading">
+                <span className="resume-col__bar" />
+                Employment History
+              </h3>
+              {timeline.map((item, i) => (
+                <div key={i} className="timeline-item">
+                  <div className="timeline-item__year">{item.year}</div>
+                  <div className="timeline-item__title">{item.title}</div>
+                  <div className="timeline-item__sub">
+                    {item.company} · {item.location}
+                  </div>
+                </div>
+              ))}
+            </div>
 
-    </ul>
-    </div>
-     <div class="job">
-      <h3 id="company">Paperless Environments(Baton Rouge, LA)</h3>
-        <ul>
-      <li>Technical Support Rep (January 2021 – Present)</li>
-    </ul>
-   </div>
-</div>
-<div class="skills">
-<h1> Technical Skills/Knowledge</h1>
-  <ul>
-    <li>VMware/Virtual Images</li>
-    <li>Remote Desktop</li>
-    <li>Microsoft Office Suite</li>
-    <li>Windows XP, 7, 8,10/ Windows Server/Active Directory</li>
-    <li>Frontend Development: AJAX, JSON, HTML, CSS, Javascript, Jquery, ReactJS, Responsive Design, Bootstrap, MaterialUI, FontAwesome, Greensock Animation Library</li>
-    <li>Backend Development: Rest APIs, Nodejs, Postgres, MySQL, SSMS, JWT, Express, Nodemailer, AWS S3, Websockets, Heroku  </li>
-    <li>Version Control: GitHub, Visual Studio Code</li>
-  </ul>
-  
-</div>
-<div class="pagination">
-    <button class="previous" onClick={previousBtn}>Previous</button>
-    <ul><span>
-      <li class="page1" onClick={viewEducation}><span>1</span></li>
-      <li class="page2" onClick={viewHistory}><span>2</span></li>
-      <li class="page3" onClick={viewSkills}><span>3</span></li>
-      </span></ul>
-    <button class="next" onClick={nextBtn}>Next</button>
-  </div> 
-  
-</div>
-          </>
+            <div className="resume-col">
+              <h3 className="resume-col__heading">
+                <span className="resume-col__bar" />
+                Education
+              </h3>
+              {education.map((item, i) => (
+                <div key={i} className="timeline-item">
+                  <div className="timeline-item__year">{item.year}</div>
+                  <div className="timeline-item__title">{item.title}</div>
+                  <div className="timeline-item__sub">
+                    {item.school} · {item.detail}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="resume-cta">
+            <a
+              className="btn btn--primary"
+              href="/IT Resume Nov. 2024.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Full Resume →
+            </a>
+          </div>
         </div>
-      </Modal>
-      <div class="projects-pg" ref={projectsSection}>
-        <h1>Projects</h1>
+      </section>
 
-<h2> Web Applicatons </h2>
+      {/* ── CONTACT ── */}
+      <section className="contact-section" ref={contactRef}>
+        <div className="section__inner">
+          <p className="section-label">Get In Touch</p>
+          <h2 className="section-title">
+            Contact <span className="accent">Me</span>
+          </h2>
 
-        <div class="project-cards">
-          <Card style={{ width: "17rem" }}>
-            <Card.Img
-              variant="top"
-              src="https://d2v76lnwus9o6a.cloudfront.net/1701361356911_Social_Profile_Facebook.jpg"
-            />
-            <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Three28</Card.Title>
-              <Card.Text style={{ fontSize: "22px" }}>
-                Subscription based, video sharing platform with marketplace for content creators.
-              </Card.Text>
-              <Button variant="primary">
-                <a href="https://three28.app/" target="_blank">Visit Three28</a>
-              </Button>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "17rem" }}>
-            <Card.Img
-              variant="top"
-              src="https://faribucket.s3.amazonaws.com/1630504972517_large%20pizza.jpeg"
-            />
-            <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Dirty Keto</Card.Title>
-              <Card.Text style={{ fontSize: "22px" }}>
-                Keto centered restaurant website with cart functionality and Paypal sandbox checkout. 
-              </Card.Text>
-              <Button variant="primary">
-                <a href="https://dirtyketo-go.netlify.app/" target="_blank">Visit Dirty Keto</a>
-              </Button>
-            </Card.Body>
-          </Card>
+          <div className="contact-grid">
+            <div className="contact-info">
+              <h3>
+                Let's Build Something <span className="accent">Great</span>
+              </h3>
+              <p>
+                Open to freelance projects, full-time roles, and collaboration
+                opportunities. Whether you have a project in mind or just want to
+                connect — I'd love to hear from you.
+              </p>
 
-         <Card style={{ width: "17rem" }}>
-            <Card.Img
-              variant="top"
-              src="https://ih1.redbubble.net/image.1028635848.2482/st,small,507x507-pad,600x600,f8f8f8.jpg"
-            />
-            <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Sneaker Head</Card.Title>
-              <Card.Text style={{ fontSize: "22px" }}>
-                Hottest eCommerce apparel store, for your apparel needs. Stay Fresh. Stay Crisp. Sneaker Head.
-              </Card.Text>
-              <Button variant="primary">
-                <a href="https://sneakerhead22.herokuapp.com/" target="_blank">Visit Sneaker Head</a>
-              </Button>
-            </Card.Body>
-          </Card>
+              <div className="contact-detail">
+                <span className="contact-detail__icon">✉</span>
+                <a href="mailto:williams_rashon92@yahoo.com">
+                  williams_rashon92@yahoo.com
+                </a>
+              </div>
 
-        
+              <div className="contact-socials">
+                <a
+                  href="https://www.linkedin.com/in/rashon-williams-26575291"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-pill"
+                >
+                  <i className="fa fa-linkedin" aria-hidden="true" />
+                  LinkedIn
+                </a>
+                <a
+                  href="https://github.com/rashonwill"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-pill"
+                >
+                  <i className="fa fa-github" aria-hidden="true" />
+                  GitHub
+                </a>
+              </div>
+            </div>
+
+            <form
+              className="contact-form"
+              action="https://formsubmit.co/williams_rashon92@yahoo.com"
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="Portfolio Contact" />
+              <input type="hidden" name="_captcha" value="false" />
+
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="name">Name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="subject">Subject</label>
+                <input
+                  id="subject"
+                  type="text"
+                  name="subject"
+                  placeholder="Project Inquiry"
+                />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell me about your project..."
+                  required
+                  rows={5}
+                />
+              </div>
+
+              <button type="submit" className="btn btn--primary btn--full">
+                Send Message →
+              </button>
+            </form>
+          </div>
         </div>
+      </section>
 
-<div class="mobile-apps">
-         <Card style={{ width: "17rem" }}>
-            <Card.Img
-              variant="top"
-              src="https://faribucket.s3.amazonaws.com/My+project-1+(36).png"
-            />
-            <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Todos</Card.Title>
-              <Card.Text style={{ fontSize: "22px" }}>
-                Keep track of your daily task!
-              </Card.Text>
-              <Button variant="primary">
-                <a href="https://rashonwill.github.io/todo_webapplication/" target="_blank">View Todo App</a>
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card style={{ width: "17rem" }}>
-            <Card.Img
-              variant="top"
-              src="https://fari-prod-hls-069544520198.s3.amazonaws.com/math-education-illustration.jpeg"
-            />
-            <Card.Body>
-              <Card.Title style={{ fontSize: "25px" }}>Calculator</Card.Title>
-              <Card.Text style={{ fontSize: "22px" }}>
-                Math Calculator
-              </Card.Text>
-              <Button variant="primary">
-                <a href="https://coolcalculator.netlify.app/" target="_blank">View Calculator</a>
-              </Button>
-            </Card.Body>
-          </Card>
-
-</div>
-
-
-</div>
-
-
-
-      <div class="contacts-pg" ref={contactSection}>
-        <h1>Contact Me</h1>
-        <div class="contact-form">
-          <form class="contact-me" action="https://formsubmit.co/williams_rashon92@yahoo.com" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required></input>
-            <input type="text" name="email" placeholder="Email" required></input>
-            <input type="text" name="subject" placeholder="Subject"></input>
-            <textarea name="message" placeholder="Let's Connect" required></textarea>
-      <div class="image">
-        <div class="linked">
-    <a href="https://www.linkedin.com/in/rashon-williams-26575291" target="_blank"><i class="fa fa-linkedin"></i></a>
-    <a href="https://www.linkedin.com/in/rashon-williams-26575291" target="_blank">LinkedIn</a>
-      </div>
-<div class="git">
-     <a href="https://github.com/rashonwill" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-    <a href="https://github.com/rashonwill" target="_blank">Github</a>
-       </div>
-</div>
-            <button type="submit">Submit</button>
-          </form>
+      {/* ── FOOTER ── */}
+      <footer className="footer">
+        <div className="footer__inner">
+          <div className="footer__brand">RASHON WILLIAMS</div>
+          <p className="footer__tagline">Full Stack Developer · Baton Rouge, LA</p>
+          <nav className="footer__nav">
+            {NAV_LINKS.map((label) => (
+              <button key={label} onClick={() => scrollTo(refMap[label])}>
+                {label}
+              </button>
+            ))}
+          </nav>
+          <p className="footer__copy">
+            © {new Date().getFullYear()} Rashon Williams. All rights reserved.
+          </p>
         </div>
-      </div>
-      <div class="scrollUp">
-        <i
-          class="fa fa-arrow-circle-up"
-          aria-hidden="true"
-          onClick={goToHome}
-        ></i>
-      </div>
+      </footer>
+
+      {/* ── SCROLL UP ── */}
+      {showScrollUp && (
+        <button
+          className="scroll-up-btn"
+          onClick={() => scrollTo(heroRef)}
+          aria-label="Back to top"
+        >
+          ↑
+        </button>
+      )}
     </>
   );
 };
