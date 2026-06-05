@@ -23,15 +23,46 @@ const projects = [
   },
   {
     id: 3,
-    title: "Sneaker Head",
+    title: "Ello",
     category: "webapp",
-    description: "eCommerce apparel store for sneakers and fashion. Stay Fresh. Stay Crisp.",
-    image: "https://ih1.redbubble.net/image.1028635848.2482/st,small,507x507-pad,600x600,f8f8f8.jpg",
-    url: "https://sneakerhead22.herokuapp.com/",
-    cta: "Visit Sneaker Head",
+    description: "Social community platform built for authentic connection and creative expression.",
+    image: "",
+    gradient: "linear-gradient(135deg, #6d28d9 0%, #c026d3 100%)",
+    url: "https://ello.love/",
+    cta: "Visit Ello",
   },
   {
     id: 4,
+    title: "CleanSync",
+    category: "webapp",
+    description: "Streamlined scheduling and management platform for cleaning service businesses.",
+    image: "",
+    gradient: "linear-gradient(135deg, #0891b2 0%, #6d28d9 100%)",
+    url: "https://cleansync-app.netlify.app/",
+    cta: "Visit CleanSync",
+  },
+  {
+    id: 5,
+    title: "InstaInvoice",
+    category: "webapp",
+    description: "Fast, professional invoice generation for freelancers and small businesses.",
+    image: "",
+    gradient: "linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%)",
+    url: "https://instainvoice.app/",
+    cta: "Visit InstaInvoice",
+  },
+  {
+    id: 6,
+    title: "Tickr",
+    category: "webapp",
+    description: "Community platform connecting users through shared interests and real-time discussion.",
+    image: "",
+    gradient: "linear-gradient(135deg, #db2777 0%, #7c3aed 100%)",
+    url: "https://tickr-community.com/",
+    cta: "Visit Tickr",
+  },
+  {
+    id: 7,
     title: "Todos",
     category: "miniapp",
     description: "Clean, minimalist daily task tracker to keep you organized and on track.",
@@ -40,7 +71,7 @@ const projects = [
     cta: "View Todo App",
   },
   {
-    id: 5,
+    id: 8,
     title: "Calculator",
     category: "miniapp",
     description: "Sleek math calculator with a clean UI and full arithmetic operations.",
@@ -364,11 +395,18 @@ const App = () => {
             {filteredProjects.map((project) => (
               <div key={project.id} className="project-card">
                 <div className="project-card__img-wrap">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="project-card__img"
-                  />
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="project-card__img"
+                    />
+                  ) : (
+                    <div
+                      className="project-card__placeholder"
+                      style={{ background: project.gradient }}
+                    />
+                  )}
                   <div className="project-card__overlay">
                     <h3 className="project-card__title">{project.title}</h3>
                     <p className="project-card__desc">{project.description}</p>
