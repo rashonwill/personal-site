@@ -902,7 +902,7 @@ button { cursor: pointer; font-family: var(--font-body); border: none; backgroun
   border-radius: var(--radius-lg);
   width: 100%;
   max-width: 1100px;
-  max-height: 96vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -964,15 +964,13 @@ button { cursor: pointer; font-family: var(--font-body); border: none; backgroun
   flex: 1;
   border: none;
   min-height: 0;
-  height: 88vh;
 }
 
 @media (max-width: 768px) {
   .resume-modal__panel {
-    max-height: 95vh;
+    height: 95vh;
     border-radius: var(--radius-md);
   }
-  .resume-modal__iframe { height: 80vh; }
   .resume-modal__title { display: none; }
 }
 
