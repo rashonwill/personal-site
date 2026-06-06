@@ -70,7 +70,7 @@ const projects = [
     title: "Todos",
     category: "miniapp",
     description: "Clean, minimalist daily task tracker to keep you organized and on track.",
-    image: "https://faribucket.s3.amazonaws.com/My+project-1+(36).png",
+    image: "/todoapp.png",
     url: "https://rashonwill.github.io/todo_webapplication/",
     cta: "View Todo App",
   },
@@ -79,7 +79,7 @@ const projects = [
     title: "Calculator",
     category: "miniapp",
     description: "Sleek math calculator with a clean UI and full arithmetic operations.",
-    image: "https://fari-prod-hls-069544520198.s3.amazonaws.com/math-education-illustration.jpeg",
+    image: "/calculator%20-%20app.png",
     url: "https://coolcalculator.netlify.app/",
     cta: "View Calculator",
   },
@@ -651,7 +651,7 @@ const App = () => {
               <div className="resume-modal__actions">
                 <a
                   className="btn btn--sm btn--outline"
-                  href="/IT Resume Nov. 2024.pdf"
+                  href="/Rashon Williams Resume 2026.pdf"
                   download
                 >
                   Download
@@ -667,7 +667,7 @@ const App = () => {
             </div>
             <iframe
               className="resume-modal__iframe"
-              src="/IT Resume Nov. 2024.pdf"
+              src="/Rashon Williams Resume 2026.pdf"
               title="Rashon Williams Resume"
             />
           </div>
