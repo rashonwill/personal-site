@@ -597,23 +597,14 @@ button { cursor: pointer; font-family: var(--font-body); border: none; backgroun
 }
 
 .project-card__logo {
-  width: 160px;
-  height: 160px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.45));
-  transition: transform 0.4s ease;
+  padding: 2.5rem;
+  transition: transform 0.55s ease;
 }
 .project-card:hover .project-card__logo {
-  transform: scale(1.06);
-}
-.project-card:has(.project-card__placeholder) .project-card__overlay {
-  opacity: 1;
-  background: linear-gradient(
-    to top,
-    rgba(13, 10, 20, 0.92) 0%,
-    rgba(13, 10, 20, 0.45) 60%,
-    transparent 100%
-  );
+  transform: scale(1.04);
 }
 
 /* ────────────────────────────────────────────
