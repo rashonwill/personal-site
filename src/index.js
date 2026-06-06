@@ -27,6 +27,7 @@ const projects = [
     category: "webapp",
     description: "Say ello, to real connections. 30-minute eDates, and finding your match. ",
     image: "",
+    logo: "/ello%20logo.png",
     gradient: "linear-gradient(135deg, #6d28d9 0%, #c026d3 100%)",
     url: "https://ello.love/",
     cta: "Visit Ello",
@@ -37,6 +38,7 @@ const projects = [
     category: "webapp",
     description: "Streamlined scheduling and management platform for cleaning service businesses.",
     image: "",
+    logo: "/cleansync_logo.png",
     gradient: "linear-gradient(135deg, #0891b2 0%, #6d28d9 100%)",
     url: "https://cleansync-app.netlify.app/",
     cta: "Visit CleanSync",
@@ -47,6 +49,7 @@ const projects = [
     category: "webapp",
     description: "Fast, professional invoice generation for trade workers, freelancers and small businesses.",
     image: "",
+    logo: "/instainvoice_logo-DZF_c09H.png",
     gradient: "linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%)",
     url: "https://instainvoice.app/",
     cta: "Visit InstaInvoice",
@@ -57,6 +60,7 @@ const projects = [
     category: "webapp",
     description: "Tickr is a trading community built on real trades, real journals, and real thinking — not signals or hype.",
     image: "",
+    logo: "/Tickr%20Logo.png",
     gradient: "linear-gradient(135deg, #db2777 0%, #7c3aed 100%)",
     url: "https://tickr-community.com/",
     cta: "Visit Tickr",
@@ -421,7 +425,15 @@ const App = () => {
                     <div
                       className="project-card__placeholder"
                       style={{ background: project.gradient }}
-                    />
+                    >
+                      {project.logo && (
+                        <img
+                          src={project.logo}
+                          alt={project.title}
+                          className="project-card__logo"
+                        />
+                      )}
+                    </div>
                   )}
                   <div className="project-card__overlay">
                     <h3 className="project-card__title">{project.title}</h3>
