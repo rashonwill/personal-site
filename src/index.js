@@ -101,8 +101,14 @@ const skillGroups = [
 ];
 
 const timeline = [
+    {
+    year: "2025 – Present",
+    title: "Support Manager",
+    company: "Antares Technology Solutions",
+    location: "Baton Rouge, LA",
+  },
   {
-    year: "2021 – Present",
+    year: "2021 – 2025",
     title: "Technical Support Rep",
     company: "Paperless Environments",
     location: "Baton Rouge, LA",
@@ -161,6 +167,7 @@ const App = () => {
   const [scrolled, setScrolled] = useState(false);
   const [showScrollUp, setShowScrollUp] = useState(false);
   const [activeFilter, setActiveFilter] = useState("all");
+  const [resumeOpen, setResumeOpen] = useState(false);
 
   const heroRef = useRef(null);
   const aboutRef = useRef(null);
@@ -184,6 +191,17 @@ const App = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === "Escape") setResumeOpen(false); };
+    if (resumeOpen) {
+      document.addEventListener("keydown", onKey);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => document.removeEventListener("keydown", onKey);
+  }, [resumeOpen]);
 
   const scrollTo = (ref) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -246,14 +264,12 @@ const App = () => {
             >
               View Portfolio
             </button>
-            <a
+            <button
               className="btn btn--outline"
-              href="/IT Resume Nov. 2024.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={() => setResumeOpen(true)}
             >
-              Download Resume
-            </a>
+              View Resume
+            </button>
           </div>
         </div>
 
@@ -277,7 +293,7 @@ const App = () => {
           <div className="about__grid">
             <div className="about__bio">
               <p>
-                With 9+ years in IT — spanning software support, quality assurance, systems
+                With 12+ years in IT — spanning software support, quality assurance, systems
                 analysis, and technical support — I bring a rare mix of deep operational
                 knowledge and hands-on development skill.
               </p>
@@ -292,7 +308,7 @@ const App = () => {
                   <span className="stat__label">Years in IT</span>
                 </div>
                 <div className="stat">
-                  <span className="stat__num">5+</span>
+                  <span className="stat__num">8+</span>
                   <span className="stat__label">Projects Built</span>
                 </div>
                 <div className="stat">
@@ -469,14 +485,12 @@ const App = () => {
           </div>
 
           <div className="resume-cta">
-            <a
+            <button
               className="btn btn--primary"
-              href="/IT Resume Nov. 2024.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={() => setResumeOpen(true)}
             >
-              Download Full Resume →
-            </a>
+              View Full Resume →
+            </button>
           </div>
         </div>
       </section>
@@ -606,6 +620,47 @@ const App = () => {
           </p>
         </div>
       </footer>
+
+      {/* ── RESUME MODAL ── */}
+      {resumeOpen && (
+        <div
+          className="resume-modal__backdrop"
+          onClick={() => setResumeOpen(false)}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Resume viewer"
+        >
+          <div
+            className="resume-modal__panel"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="resume-modal__header">
+              <span className="resume-modal__title">Rashon Williams — Resume</span>
+              <div className="resume-modal__actions">
+                <a
+                  className="btn btn--sm btn--outline"
+                  href="/IT Resume Nov. 2024.pdf"
+                  download
+                >
+                  Download
+                </a>
+                <button
+                  className="resume-modal__close"
+                  onClick={() => setResumeOpen(false)}
+                  aria-label="Close resume"
+                >
+                  ✕
+                </button>
+              </div>
+            </div>
+            <iframe
+              className="resume-modal__iframe"
+              src="/IT Resume Nov. 2024.pdf"
+              title="Rashon Williams Resume"
+            />
+          </div>
+        </div>
+      )}
 
       {/* ── SCROLL UP ── */}
       {showScrollUp && (

@@ -875,6 +875,103 @@ button { cursor: pointer; font-family: var(--font-body); border: none; backgroun
 }
 
 /* ────────────────────────────────────────────
+   RESUME MODAL
+──────────────────────────────────────────── */
+.resume-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: rgba(13, 10, 20, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: fade-in 0.2s ease;
+}
+
+.resume-modal__panel {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 860px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--border);
+  animation: modal-slide-up 0.25s ease;
+}
+
+@keyframes modal-slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.resume-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.resume-modal__title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.resume-modal__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.resume-modal__close {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.resume-modal__close:hover {
+  background: var(--accent);
+  color: #0d0a14;
+  border-color: var(--accent);
+}
+
+.resume-modal__iframe {
+  width: 100%;
+  flex: 1;
+  border: none;
+  min-height: 0;
+  height: 75vh;
+}
+
+@media (max-width: 768px) {
+  .resume-modal__panel {
+    max-height: 95vh;
+    border-radius: var(--radius-md);
+  }
+  .resume-modal__iframe { height: 80vh; }
+  .resume-modal__title { display: none; }
+}
+
+/* ────────────────────────────────────────────
    SCROLL UP BUTTON
 ──────────────────────────────────────────── */
 .scroll-up-btn {
